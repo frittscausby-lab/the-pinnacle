@@ -628,8 +628,9 @@ footer {
 }
 
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .footer-top {
@@ -645,6 +646,7 @@ footer {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
   display: block;
+  color: #aaa;
 }
 
 .footer-brand p {
@@ -890,3 +892,31 @@ footer {
 }
 
 .ad-inner { width: 100%; text-align: center; }
+
+/* ── ARTICLE PAGE SIDEBAR LAYOUT ── */
+.article-page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.article-page-main {
+  min-width: 0;
+}
+
+.article-page-sidebar {
+  position: sticky;
+  top: 80px;
+  padding-top: 3rem;
+}
+
+@media (max-width: 960px) {
+  .article-page-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .article-page-sidebar { display: none; }
+}
