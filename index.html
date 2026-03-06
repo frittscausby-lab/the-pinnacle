@@ -12,9 +12,9 @@
     .hero-banner {
       position: relative;
       width: 100%;
-      height: 65vh;
-      min-height: 400px;
-      max-height: 680px;
+      height: 50vh;
+      min-height: 320px;
+      max-height: 520px;
       background-image: url('images/pinnacle_banner_image.jpg');
       background-size: cover;
       background-position: center 40%;
@@ -152,7 +152,24 @@
       background-color: #e8c97a;
     }
 
-    /* ── MOBILE ── */
+    /* ── CONTENT + SIDEBAR WRAPPER (3-col override) ── */
+    .content-with-sidebar {
+      grid-template-columns: 200px 1fr 320px;
+    }
+    .sidebar-left {
+      display: block;
+    }
+    @media (max-width: 1200px) {
+      .content-with-sidebar {
+        grid-template-columns: 1fr 320px;
+      }
+      .sidebar-left { display: none; }
+    }
+    @media (max-width: 960px) {
+      .content-with-sidebar {
+        grid-template-columns: 1fr;
+      }
+    }
     @media (max-width: 768px) {
       .hero-banner {
         height: 55vw;
@@ -187,7 +204,6 @@
   <div class="hero-banner-content">
     <h1>The Pinnacle</h1>
     <p>Luxury Real Estate, Markets &amp; the Aspirational Lifestyle</p>
-    <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" class="hero-banner-btn">Subscribe Free</a>
   </div>
 </section>
 
@@ -206,6 +222,14 @@
 
 <!-- ── MAIN CONTENT + SIDEBAR ── -->
 <div class="content-with-sidebar">
+
+  <!-- LEFT AD COLUMN -->
+  <aside class="sidebar sidebar-left" style="order:-1;">
+    <div class="ad-sidebar" style="position:sticky; top:80px;">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+  </aside>
+
   <main class="site-main">
 
     <div class="article-grid">
@@ -372,6 +396,7 @@
         <a href="https://buymeacoffee.com/frittscaus3" target="_blank">&#9749; Buy Me a Coffee</a>
         <a href="articles/about.html">About The Pinnacle</a>
         <a href="https://forms.gle/4AiN325FRpePnu2q7" target="_blank">Sponsor</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
       </div>
     </div>
     <div class="footer-bottom">
