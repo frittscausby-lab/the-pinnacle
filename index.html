@@ -4,186 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Pinnacle | Luxury Real Estate, Markets & the Aspirational Lifestyle</title>
-  <meta name="description" content="High-end real estate, stocks and the aspirational lifestyle. Written by Fritts Causby.">
+  <meta name="description" content="High-end real estate, stocks and the aspirational lifestyle. Written by Fritts Causby — freelance writer, ghostwriter, and 20-year market participant.">
+  <meta property="og:title" content="The Pinnacle | Luxury Real Estate, Markets & the Aspirational Lifestyle">
+  <meta property="og:description" content="Unique estates, market insights, and stories worth telling. Free newsletter by Fritts Causby.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frittscausby-lab.github.io/the-pinnacle/">
+  <meta property="og:image" content="https://media.beehiiv.com/cdn-cgi/image/format=auto,onerror=redirect/uploads/asset/file/8d5e6305-c280-48ad-bbe3-043f383b59fe/paper_hands_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://frittscausby-lab.github.io/the-pinnacle/">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* ── HERO BANNER ── */
-    .hero-banner {
-      position: relative;
-      width: 100%;
-      height: 50vh;
-      min-height: 320px;
-      max-height: 520px;
-      background-image: url('images/pinnacle_banner_image.jpg');
-      background-size: cover;
-      background-position: center 40%;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .hero-banner::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.25) 0%,
-        rgba(0,0,0,0.45) 55%,
-        rgba(0,0,0,0.65) 100%
-      );
-    }
-
-    .hero-banner-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 0 24px;
-      max-width: 760px;
-    }
-
-    .hero-banner-content h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 6vw, 5rem);
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 0.01em;
-      margin: 0 0 0.4em;
-      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
-      line-height: 1.1;
-    }
-
-    .hero-banner-content p {
-      font-family: 'DM Sans', sans-serif;
-      font-size: clamp(0.95rem, 2vw, 1.2rem);
-      font-weight: 300;
-      color: rgba(255,255,255,0.9);
-      letter-spacing: 0.04em;
-      margin: 0 0 1.8em;
-      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
-    }
-
-    .hero-banner-btn {
-      display: inline-block;
-      background-color: #c9a84c;
-      color: #000;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 14px 36px;
-      border-radius: 2px;
-      transition: background-color 0.2s ease, transform 0.15s ease;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-
-    .hero-banner-btn:hover {
-      background-color: #e8c97a;
-      transform: translateY(-1px);
-    }
-
-    /* ── SUBSCRIBE BAR (below hero) ── */
-    .subscribe-bar {
-      background-color: #1a1a1a;
-      padding: 20px 24px;
-      text-align: center;
-    }
-
-    .subscribe-bar a {
-      display: inline-block;
-      background-color: #c9a84c;
-      color: #000;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 14px 44px;
-      border-radius: 2px;
-      transition: background-color 0.2s ease;
-    }
-
-    .subscribe-bar a:hover {
-      background-color: #e8c97a;
-    }
-
-    /* ── ARTICLE EXCERPT ── */
-    .article-card-excerpt {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: #888;
-      line-height: 1.55;
-      margin: 6px 0 0;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    /* ── BOTTOM SUBSCRIBE CTA ── */
-    .subscribe-cta-bottom {
-      text-align: center;
-      padding: 24px 0 8px;
-    }
-
-    .subscribe-cta-bottom a {
-      display: inline-block;
-      background-color: #c9a84c;
-      color: #000;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 12px 32px;
-      border-radius: 2px;
-      transition: background-color 0.2s ease;
-    }
-
-    .subscribe-cta-bottom a:hover {
-      background-color: #e8c97a;
-    }
-
-    /* ── CONTENT + SIDEBAR WRAPPER (3-col override) ── */
-    .content-with-sidebar {
-      grid-template-columns: 200px 1fr 320px;
-    }
-    .sidebar-left {
-      display: block;
-    }
-    @media (max-width: 1200px) {
-      .content-with-sidebar {
-        grid-template-columns: 1fr 320px;
-      }
-      .sidebar-left { display: none; }
-    }
-    @media (max-width: 960px) {
-      .content-with-sidebar {
-        grid-template-columns: 1fr;
-      }
-    }
-    @media (max-width: 768px) {
-      .hero-banner {
-        height: 55vw;
-        min-height: 260px;
-      }
-      .hero-banner-content h1 { font-size: 2rem; }
-      .hero-banner-content p { font-size: 0.9rem; }
-      .hero-banner-btn { padding: 11px 24px; font-size: 0.78rem; }
-    }
-  </style>
 </head>
 <body>
 
-<!-- ── NAVIGATION ── -->
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo">
@@ -193,26 +25,13 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="articles/about.html">About</a>
+      <a href="articles/resources.html">Resources</a>
       <a href="https://thepinnacle.beehiiv.com/archive" target="_blank">Archive</a>
       <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" class="nav-subscribe">Subscribe Free</a>
     </nav>
   </div>
 </header>
 
-<!-- ── HERO BANNER ── -->
-<section class="hero-banner">
-  <div class="hero-banner-content">
-    <h1>The Pinnacle</h1>
-    <p>Luxury Real Estate, Markets &amp; the Aspirational Lifestyle</p>
-  </div>
-</section>
-
-<!-- ── SUBSCRIBE BAR ── -->
-<div class="subscribe-bar">
-  <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank">Subscribe Free &ndash; Join The Pinnacle</a>
-</div>
-
-<!-- ── BYLINE ── -->
 <div class="mini-hero">
   <div class="mini-hero-inner">
     <p>Written by <strong>Fritts Causby</strong> &mdash; freelance writer, ghostwriter, and 20-year market participant covering unique estates, stocks, and the aspirational lifestyle.</p>
@@ -220,21 +39,88 @@
   </div>
 </div>
 
-<!-- ── MAIN CONTENT + SIDEBAR ── -->
 <div class="content-with-sidebar">
-
-  <!-- LEFT AD COLUMN -->
-  <aside class="sidebar sidebar-left" style="order:-1;">
-    <div class="ad-sidebar" style="position:sticky; top:80px;">
-      <div class="ad-placeholder">Advertisement</div>
-    </div>
-  </aside>
-
   <main class="site-main">
 
     <div class="article-grid">
 
-      <!-- About -->
+      <a href="articles/female-power-players.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/96699286-00a0-4a13-9986-67bf908eeaf2/image.jpg" alt="Female Power Players">
+        <div class="article-card-tag">Female Power Players</div>
+        <h3>Why the Women Who Built Empires Deserve More Than a Month</h3>
+        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 6 min read</div>
+      </a>
+
+      <a href="articles/lady-leslie-profile.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg" alt="Lady Leslie Ridley-Tree">
+        <div class="article-card-tag">Female Power Players &nbsp;·&nbsp; Philanthropy</div>
+        <h3>True Wealth: The Story of Lady Leslie Ridley-Tree</h3>
+        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 6 min read</div>
+      </a>
+
+      <a href="articles/lady-leslie-estate.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg" alt="Lady Leslie Estate">
+        <div class="article-card-tag">Legacy Assets &nbsp;·&nbsp; Montecito</div>
+        <h3>Lady Leslie's Montecito Estate Now for Sale at $18.95M</h3>
+        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 8 min read</div>
+      </a>
+
+      <a href="articles/netflix-story.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/eeee42b3-fbdd-4acb-bb69-3d7f67e92468/Netflix_Chart1.png" alt="Netflix Origin Story">
+        <div class="article-card-tag">Stock Market &nbsp;·&nbsp; Lessons Learned</div>
+        <h3>I Doubled My Money on Netflix and Still Lost $107,000</h3>
+        <div class="article-card-meta">Feb 16, 2026 &nbsp;·&nbsp; 6 min read</div>
+      </a>
+
+      <a href="articles/ray-kappe-house.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/81209558-3a31-4db4-afc7-01719e0b5d59/715Brooktree-RayKappe-rearexterior.jpg" alt="Ray Kappe House">
+        <div class="article-card-tag">Legacy Assets</div>
+        <h3>Landmark Ray Kappe House Up for Sale</h3>
+        <div class="article-card-meta">Feb 13, 2026 &nbsp;·&nbsp; 3 min read</div>
+      </a>
+
+      <a href="articles/beyond-the-charts.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/9d09edd8-98a3-4990-a053-f80e23cd4aa8/NVIDIA_stock_trading_on_TIPRANKS_platform.png" alt="TipRanks IBKR">
+        <div class="article-card-tag">Stock Market</div>
+        <h3>Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</h3>
+        <div class="article-card-meta">Feb 12, 2026 &nbsp;·&nbsp; 3 min read</div>
+      </a>
+
+      <a href="articles/stocks-vs-real-estate.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/4863aa6e-33e6-4172-81a1-0bebd9242bd3/Shattered_view_of_home_and_market_rise.png" alt="Stocks vs Real Estate">
+        <div class="article-card-tag">Stock Market &nbsp;·&nbsp; Real Estate</div>
+        <h3>Stocks vs. Real Estate: How I Evaluate Potential Assets</h3>
+        <div class="article-card-meta">Feb 12, 2026 &nbsp;·&nbsp; 5 min read</div>
+      </a>
+
+      <a href="articles/xpo-logistics.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png" alt="XPO Logistics">
+        <div class="article-card-tag">Stock Market</div>
+        <h3>The Story of XPO Logistics: A 10,000% Lesson in Conviction</h3>
+        <div class="article-card-meta">Jan 29, 2026 &nbsp;·&nbsp; 4 min read</div>
+      </a>
+
+      <a href="articles/love-is-bald.html" class="article-card">
+        <img class="article-card-img" src="images/love-is-bald.jpg" alt="Love is Bald">
+        <div class="article-card-tag">Charity Spotlight</div>
+        <h3>Love is Bald: Supporting Cancer Warriors in North Carolina</h3>
+        <div class="article-card-meta">Oct 8, 2025 &nbsp;·&nbsp; 6 min read</div>
+      </a>
+
+      <a href="articles/lautner-house.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg" alt="Lautner House">
+        <div class="article-card-tag">Legacy Assets</div>
+        <h3>Timeless John Lautner-Designed Home in Long Beach</h3>
+        <div class="article-card-meta">Oct 3, 2023 &nbsp;·&nbsp; 3 min read</div>
+      </a>
+
+      <a href="articles/bottle-shock.html" class="article-card">
+        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/e2fcec11-0ddf-48b8-b8af-50371b7095ff/California_vineyard_and_wine_history.png" alt="Bottle Shock">
+        <div class="article-card-tag">Aspirational Lifestyle</div>
+        <h3>The Story of the Movie "Bottle Shock": How Napa Got Its Street Cred</h3>
+        <div class="article-card-meta">Mar 9, 2023 &nbsp;·&nbsp; 5 min read</div>
+      </a>
+
       <a href="articles/about.html" class="article-card">
         <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/3ac9e9fe-ab2e-4742-adee-65cb7dec8049/Buffett_vs._Buffett.png" alt="About The Pinnacle">
         <div class="article-card-tag">About</div>
@@ -242,110 +128,6 @@
         <div class="article-card-meta">Feb 2, 2026 &nbsp;·&nbsp; 3 min read</div>
       </a>
 
-      <!-- Netflix -->
-      <a href="articles/netflix-story.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/eeee42b3-fbdd-4acb-bb69-3d7f67e92468/Netflix_Chart1.png" alt="Netflix Origin Story">
-        <div class="article-card-tag">Stock Market &nbsp;·&nbsp; Lessons Learned</div>
-        <h3>I Doubled My Money on Netflix and Still Lost $107,000</h3>
-        <div class="article-card-meta">Feb 16, 2026 &nbsp;·&nbsp; 6 min read</div>
-        <p class="article-card-excerpt">I doubled my money on Netflix, but I still lost $107k. Here is the math I missed.</p>
-      </a>
-
-      <!-- Ray Kappe -->
-      <a href="articles/ray-kappe-house.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/81209558-3a31-4db4-afc7-01719e0b5d59/715Brooktree-RayKappe-rearexterior.jpg" alt="Ray Kappe House">
-        <div class="article-card-tag">Legacy Assets</div>
-        <h3>Landmark Ray Kappe House Up for Sale</h3>
-        <div class="article-card-meta">Feb 13, 2026 &nbsp;·&nbsp; 3 min read</div>
-        <p class="article-card-excerpt">This seven-level Pacific Palisades home is widely considered one of the most significant residential properties ever built in Southern California.</p>
-      </a>
-
-      <!-- Female Power Players -->
-      <a href="articles/female-power-players.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/96699286-00a0-4a13-9986-67bf908eeaf2/image.jpg" alt="Female Power Players">
-        <div class="article-card-tag">Female Power Players</div>
-        <h3>Why the Women Who Built Empires Deserve More Than a Month</h3>
-        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 6 min read</div>
-        <p class="article-card-excerpt">A new series on the women who built empires, broke barriers, and still don't get enough credit.</p>
-      </a>
-
-      <!-- Lautner House -->
-      <a href="articles/lautner-house.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg" alt="Lautner House">
-        <div class="article-card-tag">Legacy Assets</div>
-        <h3>Timeless John Lautner-Designed Home in Long Beach</h3>
-        <div class="article-card-meta">Oct 3, 2023 &nbsp;·&nbsp; 3 min read</div>
-        <p class="article-card-excerpt">Inside the Alexander House: A 1951 John Lautner Original in Long Beach, California.</p>
-      </a>
-
-      <!-- Lady Leslie Profile -->
-      <a href="articles/lady-leslie-profile.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg" alt="Lady Leslie Ridley-Tree">
-        <div class="article-card-tag">Female Power Players &nbsp;·&nbsp; Philanthropy</div>
-        <h3>True Wealth: The Story of Lady Leslie Ridley-Tree</h3>
-        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 6 min read</div>
-        <p class="article-card-excerpt">She gave away tens of millions and made the world better for it. The remarkable story of Lady Leslie Ridley-Tree.</p>
-      </a>
-
-      <!-- Lady Leslie Estate -->
-      <a href="articles/lady-leslie-estate.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg" alt="Lady Leslie Estate">
-        <div class="article-card-tag">Legacy Assets &nbsp;·&nbsp; Montecito</div>
-        <h3>Lady Leslie's Montecito Estate Now for Sale at $18.95M</h3>
-        <div class="article-card-meta">Feb 26, 2026 &nbsp;·&nbsp; 8 min read</div>
-        <p class="article-card-excerpt">Listed at $18.95 Million, the 1921-Era Home was Transformed by Xorin Balbes.</p>
-      </a>
-
-      <!-- XPO Logistics -->
-      <a href="articles/xpo-logistics.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png" alt="XPO Logistics" style="object-position: center center;">
-        <div class="article-card-tag">Stock Market</div>
-        <h3>The Story of XPO Logistics: A 10,000% Lesson in Conviction</h3>
-        <div class="article-card-meta">Jan 29, 2026 &nbsp;·&nbsp; 4 min read</div>
-        <p class="article-card-excerpt">How I turned a $207 investment into $2,016 and walked away from $31,000.</p>
-      </a>
-
-      <!-- Beyond the Charts -->
-      <a href="articles/beyond-the-charts.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/9d09edd8-98a3-4990-a053-f80e23cd4aa8/NVIDIA_stock_trading_on_TIPRANKS_platform.png" alt="TipRanks IBKR">
-        <div class="article-card-tag">Stock Market</div>
-        <h3>Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</h3>
-        <div class="article-card-meta">Feb 12, 2026 &nbsp;·&nbsp; 3 min read</div>
-        <p class="article-card-excerpt">I spent years listening to every analyst with a microphone. Here is what I do instead.</p>
-      </a>
-
-      <!-- Stocks vs Real Estate -->
-      <a href="articles/stocks-vs-real-estate.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/4863aa6e-33e6-4172-81a1-0bebd9242bd3/Shattered_view_of_home_and_market_rise.png" alt="Stocks vs Real Estate">
-        <div class="article-card-tag">Stock Market &nbsp;·&nbsp; Real Estate</div>
-        <h3>Stocks vs. Real Estate: How I Evaluate Potential Assets</h3>
-        <div class="article-card-meta">Feb 12, 2026 &nbsp;·&nbsp; 5 min read</div>
-        <p class="article-card-excerpt">Both markets reward patience, punish impulse, and have a long history of hiding problems in plain sight. Here is how I approach both.</p>
-      </a>
-
-      <!-- Love is Bald -->
-      <a href="articles/love-is-bald.html" class="article-card">
-        <img class="article-card-img" src="images/love-is-bald.jpg" alt="Love is Bald">
-        <div class="article-card-tag">Charity Spotlight</div>
-        <h3>Love is Bald: Supporting Cancer Warriors in North Carolina</h3>
-        <div class="article-card-meta">Oct 8, 2025 &nbsp;·&nbsp; 6 min read</div>
-        <p class="article-card-excerpt">A group of friends who turned personal loss into purposeful action, with community outreach and fundraisers that make a real difference.</p>
-      </a>
-
-      <!-- Bottle Shock -->
-      <a href="articles/bottle-shock.html" class="article-card">
-        <img class="article-card-img" src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,format=auto,onerror=redirect/uploads/asset/file/e2fcec11-0ddf-48b8-b8af-50351b7095ff/California_vineyard_and_wine_history.png" alt="Bottle Shock">
-        <div class="article-card-tag">Aspirational Lifestyle</div>
-        <h3>The Story of the Movie "Bottle Shock": How Napa Got Its Street Cred</h3>
-        <div class="article-card-meta">Mar 9, 2023 &nbsp;·&nbsp; 5 min read</div>
-        <p class="article-card-excerpt">The 1976 blind tasting that shocked the world and the scrappy California winemakers nobody saw coming.</p>
-      </a>
-
-    </div><!-- /article-grid -->
-
-    <!-- Bottom subscribe CTA -->
-    <div class="subscribe-cta-bottom">
-      <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank">Subscribe Free &ndash; Join The Pinnacle</a>
     </div>
 
     <div class="newsletter-band">
@@ -355,25 +137,46 @@
 
   </main>
 
-  <!-- ── SIDEBAR ── -->
   <aside class="sidebar">
-    <div class="ad-sidebar">
-      <div class="ad-placeholder">Advertisement</div>
-    </div>
+
     <div class="sidebar-subscribe">
       <p class="sidebar-subscribe-label">Newsletter</p>
       <h4>The Pinnacle</h4>
       <p>Unique estates, market insights, and stories worth telling. Free in your inbox.</p>
       <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" class="btn-primary" style="display:block; text-align:center; margin-top:1rem;">Subscribe Free</a>
     </div>
-    <div class="ad-sidebar" style="margin-top:2rem;">
-      <div class="ad-placeholder">Advertisement</div>
+
+    <div class="sidebar-affiliate" style="margin-top:2rem;">
+      <p class="sidebar-subscribe-label" style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);margin-bottom:1rem;display:block;">Tools I Use</p>
+
+      <div class="affiliate-box" style="margin-bottom:1rem;">
+        <h4>Interactive Brokers</h4>
+        <p>Low-cost trading, global markets, and powerful research tools. My primary brokerage for over a decade.</p>
+        <a href="https://ibkr.com/referral/fritts293" target="_blank" rel="sponsored noopener">Open an Account &rarr;</a>
+      </div>
+
+      <div class="affiliate-box" style="margin-bottom:1rem;">
+        <h4>TipRanks</h4>
+        <p>Analyst ratings, insider transactions, and stock research that cuts through the noise.</p>
+        <a href="https://www.tipranks.com" target="_blank" rel="sponsored noopener">Try TipRanks &rarr;</a>
+      </div>
+
+      <div class="affiliate-box" style="margin-bottom:1rem;">
+        <h4>Wealthfront</h4>
+        <p>Automated investing with tax-loss harvesting. A smart hands-off option for long-term growth.</p>
+        <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="sponsored noopener">Get Started &rarr;</a>
+      </div>
+
+      <div class="affiliate-box">
+        <h4>Robinhood</h4>
+        <p>Commission-free trading with a clean, beginner-friendly interface.</p>
+        <a href="https://join.robinhood.com/frittsc-697bc7" target="_blank" rel="sponsored noopener">Join Robinhood &rarr;</a>
+      </div>
     </div>
+
   </aside>
+</div>
 
-</div><!-- /content-with-sidebar -->
-
-<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -383,7 +186,7 @@
       </div>
       <div class="footer-col">
         <h4>Read</h4>
-        <a href="articles/lady-leslie-profile.html">Female Power Players</a>
+        <a href="articles/female-power-players.html">Female Power Players</a>
         <a href="articles/netflix-story.html">Netflix Origin Story</a>
         <a href="articles/xpo-logistics.html">XPO Logistics</a>
         <a href="articles/love-is-bald.html">Love is Bald</a>
@@ -395,6 +198,7 @@
         <a href="https://www.frittscausby.com" target="_blank">FrittsCausby.com</a>
         <a href="https://buymeacoffee.com/frittscaus3" target="_blank">&#9749; Buy Me a Coffee</a>
         <a href="articles/about.html">About The Pinnacle</a>
+        <a href="articles/resources.html">Resources</a>
         <a href="https://forms.gle/4AiN325FRpePnu2q7" target="_blank">Sponsor</a>
         <a href="privacy-policy.html">Privacy Policy</a>
       </div>
