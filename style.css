@@ -379,7 +379,7 @@ nav a:hover { color: var(--gold); }
 .cta-band-text p {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.88rem !important;
-  color: #aaa !important;
+  color: #ddd !important;
   margin: 0 !important;
   line-height: 1.5 !important;
 }
@@ -395,7 +395,7 @@ nav a:hover { color: var(--gold); }
   padding: 4rem 2rem 3rem;
 }
 .article-header-inner {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .article-tag {
@@ -434,9 +434,9 @@ nav a:hover { color: var(--gold); }
 
 /* ARTICLE BODY */
 .article-body {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 0 4rem;
 }
 .article-body .hero-image {
   width: 100%;
@@ -770,7 +770,7 @@ footer {
 .sidebar {
   position: sticky;
   top: 80px;
-  padding-top: 1.75rem;
+  padding-top: 1.875rem;
 }
 .sidebar-subscribe {
   background: var(--charcoal);
@@ -824,19 +824,13 @@ footer {
 
 /* ARTICLE PAGE SIDEBAR LAYOUT */
 .article-page-wrapper {
-  max-width: 1400px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem 4rem;
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 3rem;
-  align-items: start;
 }
 .article-page-main { min-width: 0; }
 .article-page-sidebar {
-  position: sticky;
-  top: 80px;
-  padding-top: 3rem;
+  display: none;
 }
 @media (max-width: 960px) {
   .article-page-wrapper { grid-template-columns: 1fr; }
@@ -897,7 +891,7 @@ footer {
 /* HOMEPAGE INVISIBLE WALL ALIGNMENT */
 /* Ensure article grid and newsletter band share identical left/right edges */
 .content-with-sidebar .site-main {
-  padding: 1.75rem 0;
+  padding: 1.875rem 0;
 }
 
 .content-with-sidebar .article-grid {
