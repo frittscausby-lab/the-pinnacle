@@ -770,6 +770,7 @@ footer {
 .sidebar {
   position: sticky;
   top: 80px;
+  padding-top: 4rem;
 }
 .sidebar-subscribe {
   background: var(--charcoal);
