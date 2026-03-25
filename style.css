@@ -770,7 +770,7 @@ footer {
 .sidebar {
   position: sticky;
   top: 80px;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .sidebar-subscribe {
   background: var(--charcoal);
@@ -897,7 +897,7 @@ footer {
 /* HOMEPAGE INVISIBLE WALL ALIGNMENT */
 /* Ensure article grid and newsletter band share identical left/right edges */
 .content-with-sidebar .site-main {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .content-with-sidebar .article-grid {
