@@ -891,3 +891,25 @@ footer {
   background: #f4f4f4;
   color: var(--text);
 }
+
+
+/* HOMEPAGE INVISIBLE WALL ALIGNMENT */
+/* Ensure article grid and newsletter band share identical left/right edges */
+.content-with-sidebar .site-main {
+  padding: 4rem 0;
+}
+
+.content-with-sidebar .article-grid {
+  padding: 0;
+}
+
+.content-with-sidebar .newsletter-band {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Pinnacle Partnerships section inside grid — full-width alignment */
+.content-with-sidebar .pinnacle-partnerships {
+  margin-left: 0;
+  margin-right: 0;
+}
