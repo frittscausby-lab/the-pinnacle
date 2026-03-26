@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+    STEP 1: UPDATE ALL META TAGS BELOW WITH YOUR ARTICLE INFO
+  ============================================================ -->
+
+  <!-- Page title — shown in browser tab and search results -->
+  <title>ARTICLE TITLE | The Pinnacle</title>
+
+  <!-- Short description for search results and social sharing (150–160 chars ideal) -->
+  <meta name="description" content="ARTICLE DESCRIPTION — one or two sentences summarizing the article.">
+
+  <!-- Open Graph (Facebook, LinkedIn previews) -->
+  <meta property="og:title" content="ARTICLE TITLE | The Pinnacle">
+  <meta property="og:description" content="ARTICLE DESCRIPTION">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://thepinnacle.ink/articles/YOUR-ARTICLE-SLUG.html">
+  <meta property="og:image" content="HERO_IMAGE_URL">
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARTICLE TITLE | The Pinnacle">
+  <meta name="twitter:description" content="ARTICLE DESCRIPTION">
+  <meta name="twitter:image" content="HERO_IMAGE_URL">
+
+  <!-- Canonical URL — match the og:url above -->
+  <link rel="canonical" href="https://thepinnacle.ink/articles/YOUR-ARTICLE-SLUG.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Site stylesheet — do not change this path -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- ============================================================
+    STEP 2: UPDATE SCHEMA (structured data for Google)
+    Copy/paste and fill in: headline, description, url, datePublished
+  ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ARTICLE TITLE",
+    "description": "ARTICLE DESCRIPTION",
+    "url": "https://thepinnacle.ink/articles/YOUR-ARTICLE-SLUG.html",
+    "datePublished": "YYYY-MM-DD",
+    "author": {"@type": "Person", "name": "Fritts Causby", "url": "https://www.frittscausby.com"},
+    "publisher": {"@type": "Organization", "name": "The Pinnacle", "url": "https://thepinnacle.ink"}
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================================================
+    SITE HEADER — do not edit this block
+  ============================================================ -->
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="https://media.beehiiv.com/cdn-cgi/image/format=auto,onerror=redirect/uploads/asset/file/8d5e6305-c280-48ad-bbe3-043f383b59fe/paper_hands_logo.png" alt="" width="40" height="40">
+        <span class="logo-text">The <span>Pinnacle</span></span>
+      </a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="https://thepinnacle.beehiiv.com/archive" target="_blank" rel="noopener">Archive</a>
+        <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener" class="nav-subscribe">Subscribe Free</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+    STEP 3: ARTICLE HEADER
+    - article-tag: category label (e.g. "Legacy Assets", "Stock Market", "Aspirational Lifestyle")
+    - h1: full article title
+    - subtitle: one-line subheading
+    - article-byline: author, date (Month D, YYYY), read time
+  ============================================================ -->
+  <div class="article-header">
+    <div class="article-header-inner">
+      <div class="article-tag">CATEGORY TAG</div>
+      <h1>Article Title Goes Here</h1>
+      <p class="subtitle">A short, punchy subheading that adds context</p>
+      <div class="article-byline">
+        <strong>Fritts Causby</strong> &nbsp;&middot;&nbsp; Mon D, YYYY &nbsp;&middot;&nbsp; X min read
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    ARTICLE LAYOUT WRAPPER — do not edit class names
+  ============================================================ -->
+  <div class="article-page-wrapper">
+    <div class="article-page-main">
+      <div class="article-body">
+
+        <!-- ============================================================
+          STEP 4: HERO IMAGE
+          - src: path to image (local: ../images/filename.jpg  OR  full beehiiv CDN URL)
+          - alt: brief description of the image
+          - width/height: actual pixel dimensions of the source image
+        ============================================================ -->
+        <img class="hero-image"
+          src="../images/YOUR-IMAGE.jpg"
+          alt="Description of hero image"
+          width="1200" height="675"
+          loading="lazy">
+
+        <!-- ============================================================
+          STEP 5: ARTICLE BODY CONTENT
+          Use standard HTML:
+            <p> for paragraphs
+            <h2> for section headings
+            <h3> for sub-headings
+            <a href="URL" target="_blank" rel="noopener">link text</a> for external links
+            <strong> for bold emphasis
+            <em> for italics
+            <img src="..." alt="..." width="..." height="..." loading="lazy"> for inline images
+            <p class="caption">Caption text here</p> after an inline image
+        ============================================================ -->
+
+        <p>Opening paragraph — draw the reader in. What is this story about and why does it matter?</p>
+
+        <p>Second paragraph continuing the introduction or setting the scene.</p>
+
+        <h2>First Section Heading</h2>
+
+        <p>Body content for this section. Keep paragraphs relatively short for readability.</p>
+
+        <p>Another paragraph. <a href="https://example.com" target="_blank" rel="noopener">External links</a> open in a new tab.</p>
+
+        <!-- OPTIONAL: inline image mid-article -->
+        <!--
+        <img src="../images/mid-article-image.jpg" alt="Description" width="900" height="600" loading="lazy">
+        <p class="caption">Photo credit or caption text here</p>
+        -->
+
+        <h2>Second Section Heading</h2>
+
+        <p>More body content here.</p>
+
+        <p>Keep writing until the story is complete. Aim for 400–1200 words for most articles.</p>
+
+        <!-- ============================================================
+          STEP 6: MID-ARTICLE CTA BAND
+          Place this roughly halfway through the article.
+          Do not change the class names or structure.
+          Update the h4 text to match the article's tone if desired.
+        ============================================================ -->
+        <div class="cta-band">
+          <div class="cta-band-text">
+            <h4>Enjoying this story?</h4>
+            <p>Get exclusive features, market insights, and luxury real estate profiles — <strong>free in your inbox.</strong></p>
+          </div>
+          <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener" class="btn-primary">Subscribe Free &rarr;</a>
+        </div>
+
+        <!-- ============================================================
+          Continue article body content after CTA band
+        ============================================================ -->
+
+        <p>Continue the rest of the article here after the CTA band.</p>
+
+        <p>Closing paragraph — wrap up the story, key takeaway, or call to action.</p>
+
+        <!-- ============================================================
+          STEP 7: RELATED ARTICLES ("Keep Reading" section)
+          - Add 3 related article cards
+          - href: relative path to the article file
+          - src: image URL (local ../images/ or beehiiv CDN)
+          - alt: image description
+          - h4: article title
+        ============================================================ -->
+        <div class="related-section">
+          <h3>Keep Reading</h3>
+          <div class="related-grid">
+
+            <a href="RELATED-ARTICLE-1.html" class="related-card">
+              <img src="../images/related-image-1.jpg" alt="Related article 1" width="400" height="267" loading="lazy">
+              <h4>Related Article Title One</h4>
+            </a>
+
+            <a href="RELATED-ARTICLE-2.html" class="related-card">
+              <img src="../images/related-image-2.jpg" alt="Related article 2" width="400" height="267" loading="lazy">
+              <h4>Related Article Title Two</h4>
+            </a>
+
+            <a href="RELATED-ARTICLE-3.html" class="related-card">
+              <img src="../images/related-image-3.jpg" alt="Related article 3" width="400" height="267" loading="lazy">
+              <h4>Related Article Title Three</h4>
+            </a>
+
+          </div>
+        </div>
+
+      </div><!-- end article-body -->
+    </div><!-- end article-page-main -->
+
+    <!-- Sidebar is hidden on article pages via CSS (display: none) — keep this markup in place -->
+    <aside class="article-page-sidebar"></aside>
+
+  </div><!-- end article-page-wrapper -->
+
+  <!-- ============================================================
+    SITE FOOTER — do not edit this block
+  ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">The <span>Pinnacle</span></span>
+          <p>Unique estates, architectural properties, real-world market insights, and stories worth telling. &mdash; Fritts Causby</p>
+        </div>
+        <div class="footer-col">
+          <h4>Read</h4>
+          <a href="lady-leslie-profile.html">Female Power Players</a>
+          <a href="netflix-story.html">Netflix Origin Story</a>
+          <a href="xpo-logistics.html">XPO Logistics</a>
+          <a href="love-is-bald.html">Love is Bald</a>
+          <a href="bottle-shock.html">Bottle Shock</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe to Newsletter</a>
+          <a href="https://www.frittscausby.com" target="_blank" rel="noopener">FrittsCausby.com</a>
+          <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener">&#9749; Buy Me a Coffee</a>
+          <a href="about.html">About The Pinnacle</a>
+          <a href="resources.html">Resources</a>
+          <a href="https://forms.gle/4AiN325FRpePnu2q7" target="_blank" rel="noopener">Sponsor</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 The Pinnacle. Written by Fritts Causby.</span>
+        <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener" class="coffee-btn">&#9749; Buy Me a Coffee</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
