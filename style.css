@@ -609,8 +609,11 @@ blockquote {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: cover;
+  object-position: center;
   margin-bottom: 0.6rem;
   margin-top: 0 !important;
+  max-height: none;
+  height: auto;
 }
 .related-card h4 {
   font-family: 'Playfair Display', Georgia, serif;
