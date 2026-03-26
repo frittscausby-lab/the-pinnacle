@@ -606,14 +606,14 @@ blockquote {
   color: inherit;
 }
 .related-card img {
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-  object-position: center;
+  width: 100% !important;
+  aspect-ratio: 3/2 !important;
+  object-fit: cover !important;
+  object-position: center !important;
   margin-bottom: 0.6rem;
   margin-top: 0 !important;
-  max-height: none;
-  height: auto;
+  max-height: none !important;
+  height: auto !important;
 }
 .related-card h4 {
   font-family: 'Playfair Display', Georgia, serif;
