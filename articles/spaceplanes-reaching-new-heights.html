@@ -30,14 +30,14 @@
     background: var(--paper);
     color: var(--ink);
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
 
   #wrapper {
     display: grid;
-    grid-template-columns: 320px minmax(0, 1fr) 280px;
+    grid-template-columns: 340px minmax(0, 1fr) 320px;
     min-height: 100vh;
   }
 
@@ -46,7 +46,7 @@
   #sidebar {
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
-    padding: 3rem 2.25rem 2rem;
+    padding: 3rem 2.5rem 2rem;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -92,9 +92,25 @@
 
   /* ============ MAIN CONTENT ============ */
   #main {
-    padding: 3.5rem 4rem 5rem;
-    max-width: 880px;
+    padding: 3.5rem 3.5rem 5rem 3.5rem;
+    max-width: none;
   }
+
+  /* Constrain main content blocks to match article body width */
+  .masthead-bar,
+  .breadcrumb,
+  .article-header,
+  .article-lead-image,
+  .article-tags,
+  .article-cta,
+  .related,
+  .outreach-line,
+  .main-foot {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   .masthead-bar {
     display: flex;
@@ -197,7 +213,9 @@
     font-size: 1.08rem;
     line-height: 1.75;
     color: var(--ink);
-    max-width: 680px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .article-body p {
@@ -509,13 +527,12 @@
 
   /* ============ RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 1.75rem 5rem 0;
+    padding: 3.5rem 2.5rem 5rem 2.25rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-block {
     margin-bottom: 2.5rem;
-    padding-left: 1.5rem;
   }
   .rail-label {
     font-family: 'JetBrains Mono', monospace;
