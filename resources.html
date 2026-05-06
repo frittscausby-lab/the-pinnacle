@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lifestyle | The Pinnacle</title>
-<meta name="description" content="Wine, charity, philanthropy, film, and the stories that connect wealth to purpose. The aspirational side of The Pinnacle.">
-<link rel="canonical" href="https://thepinnacle.ink/categories/lifestyle.html">
+<title>Resources | The Pinnacle</title>
+<meta name="description" content="Tools, brokerages, and reading recommendations from The Pinnacle. Trusted resources for serious readers of high-end real estate and stock market coverage.">
+<link rel="canonical" href="https://thepinnacle.ink/resources.html">
 <link rel="alternate" type="application/rss+xml" title="The Pinnacle" href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -500,48 +500,54 @@
     .featured h1 { font-size: 2.2rem; }
   }
 
-  /* Archive page list */
-  .archive-section { margin-bottom: 3.5rem; }
-  .archive-month-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--rule);
-  }
-  .archive-list { list-style: none; }
-  .archive-list li {
-    padding: 1.1rem 0;
-    border-bottom: 1px solid var(--rule);
-    display: grid;
-    grid-template-columns: 110px 1fr auto;
-    gap: 1.5rem;
-    align-items: baseline;
-  }
-  .archive-list .archive-cat {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-  .archive-list .archive-title {
+  /* Resources page */
+  .resources-section { margin-bottom: 3.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+  .resources-section:last-of-type { border-bottom: none; }
+  .resources-section h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
+    font-size: 1.85rem;
     font-weight: 500;
-    line-height: 1.25;
+    margin-bottom: 0.5rem;
   }
-  .archive-list .archive-title a { color: var(--ink); text-decoration: none; }
-  .archive-list .archive-title a:hover { color: var(--gold); }
-  .archive-list .archive-date {
+  .resources-section .section-blurb {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.75rem;
+  }
+  .resource-card {
+    display: block;
+    padding: 1.5rem 1.75rem;
+    background: var(--paper-soft);
+    border-left: 3px solid var(--gold);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s, transform 0.15s;
+  }
+  .resource-card:hover { background: #e6dfcb; transform: translateX(3px); }
+  .resource-card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+  .resource-card-tag {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    color: #7a746a;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .resource-card-desc {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
   }
   .page-header {
     margin-bottom: 3rem;
@@ -561,7 +567,6 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -0.01em;
   }
   .page-header p {
     margin-top: 1rem;
@@ -571,6 +576,26 @@
     color: var(--ink-soft);
     max-width: 640px;
   }
+  .disclosure-note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--paper-soft);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .article-inline-image { margin: 2rem 0; }
+  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
+  .article-inline-image figcaption {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--ink-soft); padding-top: 0.6rem;
+  }
+</style>
+<style>
+  /* Outreach footer styling */
   .outreach-line {
     margin-top: 2.5rem;
     padding: 1.5rem 0 0.5rem;
@@ -583,18 +608,6 @@
   }
   .outreach-line a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
   .outreach-line a:hover { color: var(--ink); }
-  @media (max-width: 960px) {
-    .archive-list li { grid-template-columns: 1fr; gap: 0.4rem; }
-    .page-header h1 { font-size: 2.2rem; }
-  }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
 </style>
 </head>
 <body>
@@ -602,19 +615,19 @@
 <div id="wrapper">
   <aside id="sidebar">
     <div class="logo-block">
-      <div class="logo-mark"><a href="../index.html" style="color:inherit;text-decoration:none;">The <em>Pinnacle</em></a></div>
+      <div class="logo-mark"><a href="index.html" style="color:inherit;text-decoration:none;">The <em>Pinnacle</em></a></div>
       <div class="logo-tag">Real Estate · Markets · Lifestyle</div>
     </div>
 
     <nav class="primary">
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../categories/real-estate.html">Real Estate</a></li>
-        <li><a href="../categories/markets.html">Markets</a></li>
-        <li class="active"><a href="../categories/lifestyle.html">Lifestyle</a></li>
-        <li><a href="../archive.html">Archive</a></li>
-        <li><a href="../resources.html">Resources</a></li>
-        <li><a href="../about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories/real-estate.html">Real Estate</a></li>
+        <li><a href="categories/markets.html">Markets</a></li>
+        <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li class="active"><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
 
@@ -622,19 +635,19 @@
       <span class="sidebar-label">From the Archive</span>
       <ul class="mini-posts">
         <li>
-          <a href="../articles/villa-maggio-frank-sinatra-last-intact-estate.html">Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</a>
+          <a href="articles/villa-maggio-frank-sinatra-last-intact-estate.html">Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</a>
           <span class="meta">Real Estate · May 2026</span>
         </li>
         <li>
-          <a href="../articles/a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a>
+          <a href="articles/a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a>
           <span class="meta">Lifestyle · May 2026</span>
         </li>
         <li>
-          <a href="../articles/is-using-margin-ever-a-good-idea.html">Is Using Margin Ever a Good Idea?</a>
+          <a href="articles/is-using-margin-ever-a-good-idea.html">Is Using Margin Ever a Good Idea?</a>
           <span class="meta">Markets · May 2026</span>
         </li>
         <li>
-          <a href="../articles/what-the-margin-data-is-telling-us.html">What the Margin Data Is Telling Us</a>
+          <a href="articles/what-the-margin-data-is-telling-us.html">What the Margin Data Is Telling Us</a>
           <span class="meta">Markets · May 2026</span>
         </li>
       </ul>
@@ -657,79 +670,74 @@
       <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">RSS</a>
     </div>
 
-    <div class="sidebar-foot">
-      © 2026 The Pinnacle<br>
-      By Fritts Causby
-    </div>
+    <div class="sidebar-foot">© 2026 The Pinnacle<br>By Fritts Causby</div>
   </aside>
   <main id="main">
-<style>
-.featured-image::before, .featured-image::after { content: none !important; }
-.card a:hover h3 { color: var(--gold); transition: color 0.2s; }
-</style>
     <div class="masthead-bar">
-      <div class="issue-label">Section · <span>LIFESTYLE</span></div>
-      <div class="search-bar"><a href="../archive.html" style="color:inherit;text-decoration:none;">⌕ Archive</a></div>
+      <div class="issue-label">Resources · <span>RECOMMENDED TOOLS</span></div>
+      <div class="search-bar"><a href="archive.html" style="color:inherit;text-decoration:none;">⌕ Archive</a></div>
     </div>
 
     <header class="page-header">
-      <div class="kicker">Category</div>
-      <h1>Lifestyle</h1>
-      <p>Wine, charity, philanthropy, film, and the stories that connect wealth to purpose. The aspirational side of The Pinnacle.</p>
+      <div class="kicker">Tools, Brokerages & Reading</div>
+      <h1>Resources</h1>
+      <p>Tools and platforms I use, recommend, and write about. The investing services on this page pay a referral if you sign up through these links — that helps fund The Pinnacle. The recommendations are honest either way.</p>
     </header>
 
-    <div class="section-head">
-      <h2>All Lifestyle Coverage</h2>
-      <span class="count">5 pieces</span>
-    </div>
+    <section class="resources-section">
+      <h2>Brokerages and Investing</h2>
+      <p class="section-blurb">Where the Pinnacle's stock and market analysis happens, in real life.</p>
 
-    <div class="grid">
-      <article class="card">
-        <a href="../articles/a-conversation-with-scott-brown.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('../images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>A Conversation with Scott Brown</h3>
-          <p>On publishing his late father&#x27;s SR-71 pilot memoir, surviving foster care, and the college roommate who became one of New York&#x27;s most notorious serial killers.</p>
-          <span class="meta">May 05 · 9 min read</span>
-        </a>
-      </article>
-      <article class="card">
-        <a href="../articles/spaceplanes-reaching-new-heights.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0061ac62-0546-4088-b530-af44c5c8fba7/nasa.gov-lunar-flyby.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>Spaceplanes Reaching New Heights</h3>
-          <p>Two companies are building vehicles that could make space travel routine</p>
-          <span class="meta">Apr 09 · 4 min read</span>
-        </a>
-      </article>
-      <article class="card">
-        <a href="../articles/true-wealth-the-story-of-lady-leslie-ridley-tree.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>True Wealth: The Story of Lady Leslie Ridley-Tree</h3>
-          <p>Philanthropists Elevate the American Ideal</p>
-          <span class="meta">Feb 26 · 4 min read</span>
-        </a>
-      </article>
-      <article class="card">
-        <a href="../articles/love-is-bald-charity-spotlight-supporting-cancer-warriors-in-north-carolina.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('../images/love-is-bald.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>Love is Bald Charity Spotlight | Supporting Cancer Warriors in North Carolina</h3>
-          <p>A personal spotlight on Love is Bald, a North Carolina nonprofit supporting individuals affected by cancer, honoring Amy Cromartie.</p>
-          <span class="meta">Oct 08 · 4 min read</span>
-        </a>
-      </article>
-      <article class="card">
-        <a href="../articles/the-story-of-the-movie-bottle-shock.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e2fcec11-0ddf-48b8-b8af-50351b7095ff/California_vineyard_and_wine_history.png'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>The Story of the Movie “Bottle Shock”</h3>
-          <p>How Napa Valley Got its Street Cred</p>
-          <span class="meta">Mar 09 · 4 min read</span>
-        </a>
-      </article>
-    </div>
+      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">Interactive Brokers</div>
+        <span class="resource-card-tag">Active Trading · Margin · Global Markets</span>
+        <div class="resource-card-desc">Institutional-grade execution available to retail accounts. The platform I use for active trading and what I cite when I write about margin debt, futures volume, and market structure. Through the IBKR Refer-a-Friend program, the referred client receives $1 in IBKR Class A stock for every $100 deposited within the first year, up to $1,000 in stock.</div>
+      </a>
+
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">Wealthfront</div>
+        <span class="resource-card-tag">Automated Investing · Tax-Loss Harvesting</span>
+        <div class="resource-card-desc">For the part of a portfolio that benefits from being on autopilot — diversified allocation, automated tax-loss harvesting, and a high-yield cash account that handles idle cash. Funding $500 through this link adds a $50 bonus.</div>
+      </a>
+
+      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">Robinhood</div>
+        <span class="resource-card-tag">Active Brokerage · Robinhood Gold</span>
+        <div class="resource-card-desc">Among the more honest large brokerages on the margin question. The first $1,000 in margin is interest-free with a Robinhood Gold subscription, and the rate above that is competitive. Sign up gets you a free stock.</div>
+      </a>
+
+      <a href="https://schwab.com/client-referral?refrid=REFERWV2SI" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">Charles Schwab</div>
+        <span class="resource-card-tag">Full-Service Brokerage · Retirement Accounts</span>
+        <div class="resource-card-desc">For IRAs, retirement planning, and full-service support. The bones of the financial industry, with research tools and human help when you want it.</div>
+      </a>
+    </section>
+
+    <section class="resources-section">
+      <h2>Stock Research</h2>
+      <p class="section-blurb">Where the analysis comes from before the article gets written.</p>
+
+      <a href="https://www.tipranks.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">TipRanks</div>
+        <span class="resource-card-tag">Analyst Ratings · Smart Score · Insider Activity</span>
+        <div class="resource-card-desc">The screening platform behind a lot of what runs in The Pinnacle's Markets section. Aggregates analyst ratings across Wall Street, with insider trading data and news sentiment in one view.</div>
+      </a>
+    </section>
+
+    <section class="resources-section">
+      <h2>Support The Pinnacle</h2>
+      <p class="section-blurb">If the writing has earned a tip.</p>
+
+      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="resource-card">
+        <div class="resource-card-name">Buy Me a Coffee</div>
+        <span class="resource-card-tag">Direct Tip Jar · No Subscription</span>
+        <div class="resource-card-desc">A one-time tip if a piece resonated. Goes straight to the writer, no platform skim beyond payment processing.</div>
+      </a>
+    </section>
+
+    <aside class="disclosure-note">
+      <strong>Disclosure:</strong> Some links on this page are referral or affiliate links. If you sign up through them, The Pinnacle receives a small bonus or commission at no cost to you. I only list services I actually use or have used. Nothing on this page is investment advice. Do your own research, and never put money into anything you don't understand.
+    </aside>
 
     <div class="outreach-line">
       Want help developing content like this for your business or brand? Visit <a href="https://frittscausby.com" target="_blank" rel="noopener noreferrer">frittscausby.com</a>.
@@ -737,7 +745,7 @@
 
     <div class="main-foot">
       <div>The Pinnacle · Published on GitHub Pages · Delivered via Beehiiv</div>
-      <div><a href="../about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="../about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
+      <div><a href="about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
     </div>
   </main>
 </div>
