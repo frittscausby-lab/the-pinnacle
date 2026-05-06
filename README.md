@@ -1,169 +1,46 @@
-# The Pinnacle — Site Documentation
+# THE PINNACLE — REBUILD PACKAGE
+Built: May 5, 2026
 
-> **Live site:** https://thepinnacle.ink  
-> **Repo:** https://github.com/frittscausby-lab/the-pinnacle  
-> **Author:** Fritts Causby — frittscausby@gmail.com  
-> **Hosting:** Netlify (auto-deploys on every push to main)
+## What's new in this build
+- Scott Brown Q&A added as Lifestyle piece
+- Both book covers extracted from PDF jackets, compressed to JPG
+- Q&A interview format implemented: italic gold questions with left border
+- Pullquote styling active ("All I knew was I had a one way ticket...")
+- Villa Maggio remains featured hero (Sinatra aerial)
 
----
+## Site contents
+- 15 articles: 4 Real Estate, 5 Markets, 5 Lifestyle, 1 About
+- 13 local images (cover art and property photos)
+- All Beehiiv-hosted images load via CDN URLs (work as-is once deployed)
 
-## Quick Start: Adding a New Article
+## Articles in this build (newest first)
+  - [Real Estate] 2026-05-05 12:00  Villa Maggio: Frank Sinatra's Last Intact Estate  (Fritts Causby + Markus Canter)
+  - [Lifestyle  ] 2026-05-05 11:00  A Conversation with Scott Brown  (Fritts Causby)
+  - [Real Estate] 2026-05-05 08:00  Why American Buyers Are Flocking to the Cotswolds  (Fritts Causby)
+  - [Lifestyle  ] 2026-04-09 20:18  Spaceplanes Reaching New Heights  (Fritts Causby)
+  - [Real Estate] 2026-03-01 04:56  Ray Kappe House: An $11.5M Architectural Landmark  (Fritts Causby)
+  - [Markets    ] 2026-02-26 18:24  Female Power Players  (Fritts Causby)
+  - [Lifestyle  ] 2026-02-26 18:05  True Wealth: The Story of Lady Leslie Ridley-Tree  (Fritts Causby)
+  - [Real Estate] 2026-02-26 17:47  Lady Leslie’s Montecito Estate  (Fritts Causby)
+  - [Markets    ] 2026-02-16 15:02  The Netflix Origin Story  (Fritts Causby)
+  - [Markets    ] 2026-02-12 21:34  Stocks vs. Real Estate: How to Evaluate An Asset Before You Buy  (Fritts Causby)
+  - [Markets    ] 2026-02-05 05:00  Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise  (Fritts Causby)
+  - [Markets    ] 2026-01-29 19:37  The Story of XPO Logistics: A 10,000% Lesson in Conviction  (Fritts Causby)
+  - [Lifestyle  ] 2025-10-08 04:00  Love is Bald Charity Spotlight | Supporting Cancer Warriors in North Carolina  (Fritts Causby)
+  - [Real Estate] 2023-10-03 04:00  Timeless John Lautner-Designed Home in Long Beach  (Fritts Causby)
+  - [Lifestyle  ] 2023-03-09 05:00  The Story of the Movie “Bottle Shock”  (Fritts Causby)
 
-1. Copy `articles/article-template.html` and rename it (e.g. `articles/my-new-story.html`)
-2. Follow the numbered STEP comments inside the file to fill in your content
-3. Add your hero image to the `images/` folder
-4. Add a card for the new article on `index.html` (copy an existing `.article-card` block)
-5. Commit — Netlify auto-deploys within ~60 seconds
+## Deploy to GitHub Pages
+1. Open the-pinnacle GitHub repo
+2. Add file > Upload files > drag entire contents of this folder
+3. Commit: "Pinnacle rebuild — May 5 2026 (3 new articles + Editorial template)"
+4. Hard-refresh thepinnacle.ink
 
----
+## SEO step after deploy: Beehiiv canonical tags
+Paste each thepinnacle.ink/articles/<slug>.html URL into the Beehiiv post's
+"Canonical URL" field. For the 3 publish-on-site-first articles (Villa Maggio,
+Cotswolds, Scott Brown), do the same when you syndicate them as Beehiiv newsletters.
 
-## Repo Structure
-
-```
-the-pinnacle/
-├── articles/
-│   ├── article-template.html   ← blank starter for new articles
-│   ├── about.html
-│   ├── bottle-shock.html
-│   ├── beyond-the-charts.html
-│   ├── female-power-players.html
-│   ├── lady-leslie-estate.html
-│   ├── lady-leslie-profile.html
-│   ├── lautner-house.html
-│   ├── love-is-bald.html
-│   ├── netflix-story.html
-│   ├── ray-kappe-house.html
-│   ├── resources.html
-│   ├── stocks-vs-real-estate.html
-│   └── xpo-logistics.html
-├── images/
-│   ├── love-is-bald.jpg
-│   ├── love-is-bald-card.jpg
-│   └── (add new images here)
-├── index.html          ← homepage
-├── style.css           ← all site styles
-├── privacy-policy.html
-├── CNAME               ← custom domain for Netlify (thepinnacle.ink)
-├── netlify.toml        ← Netlify config
-└── README.md           ← this file
-```
-
----
-
-## Key URLs & Links
-
-| Thing | URL |
-|-------|-----|
-| Live site | https://thepinnacle.ink |
-| Newsletter (Beehiiv) | https://thepinnacle.beehiiv.com |
-| Subscribe page | https://thepinnacle.beehiiv.com/subscribe |
-| Archive | https://thepinnacle.beehiiv.com/archive |
-| Sponsor form | https://forms.gle/4AiN325FRpePnu2q7 |
-| Contact email | frittscausby@gmail.com |
-| Personal site | https://www.frittscausby.com |
-| Buy Me a Coffee | https://buymeacoffee.com/frittscaus3 |
-
----
-
-## Design System (style.css)
-
-### Color Variables
-```css
---black:      #0a0a0a
---gold:       #c9a84c   /* primary accent — headings, links, buttons */
---cream:      #faf8f3   /* page background */
---text:       #1c1c1c   /* body text */
---text-light: #888      /* captions, secondary text */
---border:     #e8e4dc
-```
-
-### Article Category Tags (article-tag)
-Use one of these in the `<div class="article-tag">`:
-- Legacy Assets
-- Stock Market
-- Aspirational Lifestyle
-- Charity Spotlight
-- Lessons Learned
-- Real Estate
-
-### Article Page Layout
-- Max content width: **900px**, centered
-- Sidebar: hidden on all article pages (display: none via CSS)
-- Hero image: `class="hero-image"`, max-height 520px
-- Body images: max-height 560px, object-fit: cover
-- Related card images: aspect-ratio 3/2, object-fit: cover
-
----
-
-## CTA Band (mid-article subscribe prompt)
-Always use this exact structure — do not simplify or it breaks the white text styling:
-
-```html
-<div class="cta-band">
-  <div class="cta-band-text">
-    <h4>Enjoying this story?</h4>
-    <p>Get exclusive features, market insights, and luxury real estate profiles — <strong>free in your inbox.</strong></p>
-  </div>
-  <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener" class="btn-primary">Subscribe Free &rarr;</a>
-</div>
-```
-
----
-
-## GitHub Editing Rules (IMPORTANT)
-
-When editing files via the GitHub web editor with an AI assistant:
-
-### Commit Dialog — Critical Rule
-Always find the commit message input using:
-```javascript
-document.querySelector('[role="dialog"]').querySelector('input[type="text"]')
-```
-**Never use** `inputs[inputs.length-1]` — that selects the filename input and corrupts the filename.
-
-### CodeMirror Injection Pattern
-```javascript
-const view = document.querySelector('.cm-content').cmTile.view;
-const tr = view.state.update({ changes: { from: 0, to: view.state.doc.length, insert: newContent } });
-view.dispatch(tr);
-```
-
----
-
-## Launching a Second Site from This Repo
-
-1. **Fork this repo** into a new repo (e.g. `frittscausby-lab/site-two`)
-2. **Connect to your hosting** (GitHub Pages, Cloudflare Pages, Vercel, etc.) — not Netlify
-3. **Update CNAME** (or remove it if using GitHub Pages default domain)
-4. **Find & replace** all instances of:
-   - `thepinnacle.ink` → your new domain
-   - `The Pinnacle` → your new site name
-   - `Fritts Causby` → your name (if different)
-   - `frittscausby@gmail.com` → your contact email
-   - The Beehiiv newsletter URLs → your new newsletter URLs
-   - The Sponsor form URL → your sponsor form
-5. **Update `style.css`** `:root` color variables if you want a different color scheme
-6. **Delete or replace** all existing article HTML files with your own content
-7. Deploy and go
-
----
-
-## Affiliate Links (resources.html + article sidebars)
-
-| Tool | Link | Benefit shown |
-|------|------|---------------|
-| Interactive Brokers | https://ibkr.com/referral/fritts293 | Up to $1,000 stock bonus |
-| TipRanks | https://www.tipranks.com | Free plan |
-| Wealthfront | https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ | +0.75% APY cash boost |
-
-All affiliate links use `target="_blank" rel="sponsored noopener"`.
-
----
-
-## Maintenance Notes
-
-- **Footer "Read" links** — manually maintained in each article file's footer block
-- **Homepage article cards** — manually added to `index.html` in the `.article-grid` section
-- **Images** — store in `/images/` for local files; Beehiiv CDN URLs also work but can break
-- **Netlify deploys** — check deploy status at netlify.com dashboard; usually live within 60 seconds of a commit
-- **CDN caching** — if changes don't appear, hard refresh (Ctrl+Shift+R) or wait ~5 minutes for CDN propagation
+## Open items / next session
+- Blenheim Palace photo for the Cotswolds article (slot still empty)
+- More articles forthcoming per Fritts ("a few more tomorrow")

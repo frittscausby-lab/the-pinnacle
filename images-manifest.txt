@@ -1,0 +1,116 @@
+THE PINNACLE — IMAGE LOCALIZATION MANIFEST
+============================================================
+Total images: 40
+
+All images currently load from Beehiiv's CDN. The site works
+as-is. To localize per the April 21 plan, download each image
+to the site's /images folder, then update the article HTML to
+use ../images/<filename> instead of the Beehiiv URL.
+
+============================================================
+
+-- spaceplanes-reaching-new-heights (7 images)
+   [lead  ] nasa.gov-lunar-flyby.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0061ac62-0546-4088-b530-af44c5c8fba7/nasa.gov-lunar-flyby.jpg
+   [inline] nasa.gov-lunar-flyby.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0061ac62-0546-4088-b530-af44c5c8fba7/nasa.gov-lunar-flyby.jpg?t=1775763379
+   [inline] videoframe_1423.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/8a8487ad-b849-47db-8e36-9949014e1f05/videoframe_1423.png?t=1775764280
+   [inline] videoframe_29620.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a7b4c14e-6401-45e1-8325-4e2caa7543e6/videoframe_29620.png?t=1775764367
+   [inline] Dream-Chaser-Completes-Tow-Testing-2.jpg
+           https://www.sierraspace.com/wp-content/uploads/2025/11/Dream-Chaser-Completes-Tow-Testing-2.jpg
+   [inline] hero-Reef_FullColor_ExternalHD.jpg
+           https://www.sierraspace.com/wp-content/uploads/2022/04/hero-Reef_FullColor_ExternalHD.jpg
+   [inline] art002e009301_large.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/5b28c72c-44b1-4a17-a315-b11301a497fc/art002e009301_large.jpg?t=1775764919
+
+-- landmark-ray-kappe-house-up-for-sale (4 images)
+   [lead  ] 715Brooktree-RayKappe-rearexterior.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81209558-3a31-4db4-afc7-01719e0b5d59/715Brooktree-RayKappe-rearexterior.jpg
+   [inline] RayKappeHouse_PP_FI4.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/cc32a0c9-3a83-4e48-96f6-b7a8330dba10/RayKappeHouse_PP_FI4.jpg?t=1771018493
+   [inline] 715Brooktree-RayKappe-office2.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0572b8ff-9a25-4fbb-94b9-a63ad3a6e101/715Brooktree-RayKappe-office2.jpg?t=1771018569
+   [inline] 715Brooktree-RayKappe-rearexterior.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/ccc03dfb-2160-45a8-b94f-f4a7cc2dfd7d/715Brooktree-RayKappe-rearexterior.jpg?t=1771018760
+
+-- female-power-players (1 images)
+   [lead  ] image.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/96699286-00a0-4a13-9986-67bf908eeaf2/image.jpg
+
+-- true-wealth-the-story-of-lady-leslie-ridley-tree (1 images)
+   [lead  ] Lady_Leslie.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg
+
+-- lady-leslie-s-montecito-estate-now-for-sale (10 images)
+   [lead  ] lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg
+   [inline] lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg?t=1772126368
+   [inline] montecito-luxury-estate-pool-xorin-balbes-design.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/b1aa26f6-92b9-4740-aadd-794ea6bdff2a/montecito-luxury-estate-pool-xorin-balbes-design.jpg.jpg?t=1772126515
+   [inline] architectural-glass-atrium-204-hot-springs-road.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d64f6e48-e7b4-4418-91db-4dda2fa39487/architectural-glass-atrium-204-hot-springs-road.jpg.jpg?t=1772126796
+   [inline] modern-european-kitchen-montecito-luxury-real-estate.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/9dbfe774-7d65-4c40-b410-dc20a9c4ddc4/modern-european-kitchen-montecito-luxury-real-estate.jpg.jpg?t=1772126882
+   [inline] montecito-estate-dining-room-xorin-balbes-design.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a3622f5d-7ede-41d7-bfea-17ac3de88b68/montecito-estate-dining-room-xorin-balbes-design.jpg.jpg?t=1772127029
+   [inline] designer-dining-room-custom-lighting-montecito.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/ef224be3-ef82-410c-80ce-0b2aa8d392e3/designer-dining-room-custom-lighting-montecito.jpg.jpg?t=1772126954
+   [inline] primary-suite-retreat-fireplace-montecito-mansion.jpg.JPG
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4bf1c3a4-e180-4b4f-bde3-284e86ac6145/primary-suite-retreat-fireplace-montecito-mansion.jpg.JPG?t=1772127146
+   [inline] luxury-primary-bathroom-freestanding-tub-design.jpg.JPG
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/05599e32-b1b9-4e87-a6b6-0a4158fa0d29/luxury-primary-bathroom-freestanding-tub-design.jpg.JPG?t=1772127210
+   [inline] montecito-sculpture-garden-lily-pond-landscaping.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/392c3127-e54d-4965-9729-1b0f6526ce42/montecito-sculpture-garden-lily-pond-landscaping.jpg.jpg?t=1772127580
+
+-- love-is-bald-charity-spotlight-supporting-cancer-warriors-in-north-carolina (2 images)
+   [lead  ] love-is-bald-north-carolina-cancer-charity-logo.jpg.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/eebf9bde-d29a-4dfd-a2e8-0cbbe0dbb8b5/love-is-bald-north-carolina-cancer-charity-logo.jpg.jpg
+   [inline] love-is-bald-amy-cromartie-volleyball-tournament-nc.jpg.jpeg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/86d28e24-170b-459e-b418-264fd1211061/love-is-bald-amy-cromartie-volleyball-tournament-nc.jpg.jpeg?t=1771974174
+
+-- the-netflix-origin-story (2 images)
+   [lead  ] Netflix_Chart1.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/eeee42b3-fbdd-4acb-bb69-3d7f67e92468/Netflix_Chart1.png
+   [inline] Netflix_Chart1.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/c9a7aa05-4b7e-4854-a65e-fa60982ff65b/Netflix_Chart1.png?t=1771371000
+
+-- the-story-of-the-movie-bottle-shock (1 images)
+   [lead  ] California_vineyard_and_wine_history.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e2fcec11-0ddf-48b8-b8af-50351b7095ff/California_vineyard_and_wine_history.png
+
+-- timeless-john-lautner-designed-home-in-long-beach (7 images)
+   [lead  ] Alexander_House_pool.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg
+   [inline] Alexander_House_pool.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg?t=1770999299
+   [inline] 5281EastElRoble1.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d620f2b0-bec3-4616-9097-cf4bea8b8dae/5281EastElRoble1.jpg?t=1770999557
+   [inline] 5281EastElRoble3.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6fef1924-2539-4782-9948-c527b01e5f39/5281EastElRoble3.jpg?t=1770999827
+   [inline] 5281EastElRoble6.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7aead459-6b23-47a8-a592-89d9170c8d68/5281EastElRoble6.jpg?t=1770999915
+   [inline] 5281EastElRoble5.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2479ff0f-72c1-45e8-a15b-7025401da8ab/5281EastElRoble5.jpg?t=1771000063
+   [inline] 5281EastElRoble11.jpg
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/bcdda68d-5996-4ec7-8466-d012e144b1a4/5281EastElRoble11.jpg?t=1770999997
+
+-- beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise (1 images)
+   [lead  ] NVIDIA_stock_trading_on_TIPRANKS_platform.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/9d09edd8-98a3-4990-a053-f80e23cd4aa8/NVIDIA_stock_trading_on_TIPRANKS_platform.png
+
+-- stocks-vs-real-estate (1 images)
+   [lead  ] Shattered_view_of_home_and_market_rise.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4863aa6e-33e6-4172-81a1-0bebd9242bd3/Shattered_view_of_home_and_market_rise.png
+
+-- about-the-pinnacle (1 images)
+   [lead  ] Buffett_vs._Buffett.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/3ac9e9fe-ab2e-4742-adee-65cb7dec8049/Buffett_vs._Buffett.png
+
+-- the-story-of-xpo-logistics (2 images)
+   [lead  ] xpo-stock-price.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png
+   [inline] xpo-stock-price.png
+           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png?t=1769714250

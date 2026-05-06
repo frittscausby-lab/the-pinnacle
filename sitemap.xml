@@ -6,73 +6,130 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://thepinnacle.ink/articles/beyond-the-charts.html</loc>
+    <loc>https://thepinnacle.ink/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/bottle-shock.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://thepinnacle.ink/archive.html</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/categories/real-estate.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/categories/markets.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/categories/lifestyle.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/villa-maggio-frank-sinatra-last-intact-estate.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/a-conversation-with-scott-brown.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/is-using-margin-ever-a-good-idea.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/what-the-margin-data-is-telling-us.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/why-american-buyers-are-flocking-to-the-cotswolds.html</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/spaceplanes-reaching-new-heights.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/landmark-ray-kappe-house-up-for-sale.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thepinnacle.ink/articles/female-power-players.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/lady-leslie-estate.html</loc>
+    <loc>https://thepinnacle.ink/articles/true-wealth-the-story-of-lady-leslie-ridley-tree.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/lady-leslie-profile.html</loc>
+    <loc>https://thepinnacle.ink/articles/lady-leslie-s-montecito-estate-now-for-sale.html</loc>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/lautner-house.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thepinnacle.ink/articles/love-is-bald.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thepinnacle.ink/articles/netflix-story.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thepinnacle.ink/articles/ray-kappe-house.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thepinnacle.ink/articles/resources.html</loc>
+    <loc>https://thepinnacle.ink/articles/the-netflix-origin-story.html</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thepinnacle.ink/articles/stocks-vs-real-estate.html</loc>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/articles/xpo-logistics.html</loc>
+    <loc>https://thepinnacle.ink/articles/beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise.html</loc>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thepinnacle.ink/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://thepinnacle.ink/articles/the-story-of-xpo-logistics.html</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/love-is-bald-charity-spotlight-supporting-cancer-warriors-in-north-carolina.html</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/timeless-john-lautner-designed-home-in-long-beach.html</loc>
+    <lastmod>2023-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thepinnacle.ink/articles/the-story-of-the-movie-bottle-shock.html</loc>
+    <lastmod>2023-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
