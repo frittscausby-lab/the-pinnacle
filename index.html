@@ -587,14 +587,112 @@
     .archive-list li { grid-template-columns: 1fr; gap: 0.4rem; }
     .page-header h1 { font-size: 2.2rem; }
   }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
+</style>
+<style>
+#wrapper { grid-template-columns: 340px minmax(0, 1fr) 280px; }
+#home-rail {
+  padding: 3.5rem 2.5rem 5rem 2.25rem;
+  border-left: 1px solid var(--rule);
+  background: var(--paper);
+}
+.home-rail-block {
+  margin-bottom: 2.5rem;
+}
+.home-rail-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+.home-rail-subscribe {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 1.6rem 1.4rem;
+}
+.home-rail-subscribe .home-rail-label {
+  color: var(--gold-soft);
+}
+.home-rail-subscribe p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--sidebar-text);
+  margin-bottom: 1rem;
+}
+.home-rail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.home-rail-form input {
+  background: #0b0d10;
+  border: 1px solid #2a2f38;
+  padding: 0.7rem 0.85rem;
+  color: var(--paper);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+.home-rail-form button {
+  background: var(--gold);
+  color: var(--sidebar-bg);
+  border: none;
+  padding: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+.home-rail-form button:hover { background: var(--gold-soft); }
+.home-tool-card {
+  display: block;
+  padding: 0.95rem 1rem;
+  background: var(--paper-soft);
+  border-left: 2px solid var(--gold);
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.15s;
+}
+.home-tool-card:hover { background: #e6dfcb; }
+.home-tool-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  display: block;
+  color: var(--ink);
+}
+.home-tool-card-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 0.25rem;
+  display: block;
+}
+.home-rail-foot {
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+}
+.home-rail-foot a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+}
+.home-rail-foot a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+@media (max-width: 1100px) {
+  #wrapper { grid-template-columns: 340px 1fr; }
+  #home-rail { display: none; }
+}
+@media (max-width: 960px) {
+  #wrapper { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -640,14 +738,7 @@
       </ul>
     </div>
 
-    <div class="sidebar-section signup-block">
-      <span class="sidebar-label">Subscribe to The Pinnacle</span>
-      <p>High-end real estate, stock market stories, and the aspirational lifestyle. Written by someone who&apos;s learned both the hard way.</p>
-      <form class="signup-form" action="https://thepinnacle.beehiiv.com/subscribe" method="post" target="_blank">
-        <input type="email" name="email" placeholder="Email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+
 
     <div class="socials">
       <a href="https://instagram.com/thepinnaclebyfritts" target="_blank">IG</a>
@@ -743,27 +834,41 @@
           <span class="meta">Mar 01 · 3 min read</span>
         </a>
       </article>
-    </div>
-
-    <div class="section-head">
-      <h2>Also This Week</h2>
-    </div>
-
-    <div class="minor-grid">
-      <article class="minor">
-        <div class="card-category">Markets</div>
-        <h4><a href="articles/female-power-players.html" style="color:inherit;text-decoration:none;font-style:inherit;">Female Power Players</a></h4>
-        <p>Why the Women Who Built Empires Deserve More Than a Month</p>
+      <article class="card">
+        <a href="articles/female-power-players.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/96699286-00a0-4a13-9986-67bf908eeaf2/image.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Female Power Players</h3>
+          <p>Why the Women Who Built Empires Deserve More Than a Month</p>
+          <span class="meta">Feb 26 · 4 min read</span>
+        </a>
       </article>
-      <article class="minor">
-        <div class="card-category">Lifestyle</div>
-        <h4><a href="articles/true-wealth-the-story-of-lady-leslie-ridley-tree.html" style="color:inherit;text-decoration:none;font-style:inherit;">True Wealth: The Story of Lady Leslie Ridley-Tree</a></h4>
-        <p>Philanthropists Elevate the American Ideal</p>
+      <article class="card">
+        <a href="articles/true-wealth-the-story-of-lady-leslie-ridley-tree.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>True Wealth: The Story of Lady Leslie Ridley-Tree</h3>
+          <p>Philanthropists Elevate the American Ideal</p>
+          <span class="meta">Feb 26 · 4 min read</span>
+        </a>
       </article>
-      <article class="minor">
-        <div class="card-category">Real Estate</div>
-        <h4><a href="articles/lady-leslie-s-montecito-estate-now-for-sale.html" style="color:inherit;text-decoration:none;font-style:inherit;">Lady Leslie’s Montecito Estate</a></h4>
-        <p>Built in 1921, the Home was Revitalized by Xorin Balbes</p>
+      <article class="card">
+        <a href="articles/lady-leslie-s-montecito-estate-now-for-sale.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Lady Leslie’s Montecito Estate</h3>
+          <p>Built in 1921, the Home was Revitalized by Xorin Balbes</p>
+          <span class="meta">Feb 26 · 3 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-netflix-origin-story.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/eeee42b3-fbdd-4acb-bb69-3d7f67e92468/Netflix_Chart1.png'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>The Netflix Origin Story</h3>
+          <p>I doubled my money on Netflix, but I still lost $107k. Here is the math I missed</p>
+          <span class="meta">Feb 16 · 5 min read</span>
+        </a>
       </article>
     </div>
 
@@ -776,6 +881,33 @@
       <div><a href="about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
     </div>
   </main>
+  <aside id="home-rail">
+    <div class="home-rail-block home-rail-subscribe">
+      <span class="home-rail-label">Subscribe to The Pinnacle</span>
+      <p>High-end real estate, stock market stories, and the aspirational lifestyle. Written by someone who&apos;s learned both the hard way.</p>
+      <form class="home-rail-form" action="https://thepinnacle.beehiiv.com/subscribe" method="post" target="_blank">
+        <input type="email" name="email" placeholder="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="home-rail-block">
+      <span class="home-rail-label">Recommended Tools</span>
+      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="home-tool-card">
+        <span class="home-tool-card-name">Interactive Brokers</span>
+        <span class="home-tool-card-tag">Brokerage · Institutional Execution</span>
+      </a>
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="home-tool-card">
+        <span class="home-tool-card-name">Wealthfront</span>
+        <span class="home-tool-card-tag">Automated Investing · $50 Bonus</span>
+      </a>
+      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="home-tool-card">
+        <span class="home-tool-card-name">Robinhood</span>
+        <span class="home-tool-card-tag">Active Brokerage · Robinhood Gold</span>
+      </a>
+      <p class="home-rail-foot"><a href="resources.html">See all resources →</a></p>
+    </div>
+  </aside>
 </div>
 
 </body>
