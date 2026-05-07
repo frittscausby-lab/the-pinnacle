@@ -525,61 +525,125 @@
   .article-body .closing-note em { font-style: italic; }
 
 
-  /* ============ RIGHT RAIL ============ */
+
+  /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
     padding: 3.5rem 2.5rem 5rem 2.25rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
-  .rail-block {
+  .rail-top-stack {
     margin-bottom: 2.5rem;
+    padding: 1.6rem 1.4rem;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
   }
+  .rail-cta-button {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .rail-cta-subscribe {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-subscribe:hover { background: var(--gold-soft); }
+  .rail-cta-sponsor {
+    background: transparent;
+    color: var(--gold-soft);
+    border: 1px solid var(--gold);
+  }
+  .rail-cta-sponsor:hover {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-explainer {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--sidebar-muted);
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .rail-block { margin-bottom: 2.5rem; }
   .rail-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.65rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     display: block;
   }
-  .rail-block h4 {
+  .rail-winwin {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: 0.4rem;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 1.1rem;
   }
-  .rail-block h4 a { color: var(--ink); text-decoration: none; }
-  .rail-block h4 a:hover { color: var(--gold); }
 
   .tool-card {
     display: block;
-    padding: 1rem 1rem;
+    padding: 0.95rem 1rem;
     background: var(--paper-soft);
     border-left: 2px solid var(--gold);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.65rem;
     text-decoration: none;
     color: var(--ink);
-    transition: background 0.15s;
+    transition: background 0.15s, transform 0.15s;
   }
-  .tool-card:hover { background: #e6dfcb; }
+  .tool-card:hover {
+    background: #e6dfcb;
+    transform: translateX(2px);
+  }
   .tool-card-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.2;
     color: var(--ink);
+    display: block;
   }
   .tool-card-tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-top: 0.25rem;
+    color: var(--gold);
+    margin-top: 0.3rem;
     display: block;
   }
+  .tool-card-benefit {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .rail-foot-link {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+  }
+  .rail-foot-link a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+  .rail-foot-link a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
   .rail-tip-jar {
     background: var(--ink);
     color: var(--paper);
@@ -607,28 +671,6 @@
   }
   .rail-tip-jar a.tip-button:hover { background: var(--gold-soft); }
 
-  .rail-recent { list-style: none; padding: 0; }
-  .rail-recent li { padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
-  .rail-recent li:last-child { border-bottom: none; }
-  .rail-recent a {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.95rem;
-    line-height: 1.3;
-    color: var(--ink);
-    text-decoration: none;
-    font-style: italic;
-  }
-  .rail-recent a:hover { color: var(--gold); }
-  .rail-recent .meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.58rem;
-    letter-spacing: 0.15em;
-    color: #7a746a;
-    text-transform: uppercase;
-    font-style: normal;
-    display: block;
-    margin-top: 0.2rem;
-  }
 
   /* Outreach footer line */
   .outreach-line {
@@ -678,12 +720,12 @@
     <nav class="primary">
       <ul>
         <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
         <li><a href="../categories/real-estate.html">Real Estate</a></li>
         <li><a href="../categories/markets.html">Markets</a></li>
         <li class="active"><a href="../categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../resources.html">Resources</a></li>
-        <li><a href="../about.html">About</a></li>
       </ul>
     </nav>
 
@@ -819,51 +861,38 @@
 
   </main>
 
-  <!-- =============== RIGHT RAIL =============== -->
   <aside id="rail">
+    <div class="rail-top-stack">
+      <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
+      <p class="rail-cta-explainer">High-end real estate, stock market stories, and the aspirational lifestyle. Subscribe for the newsletter, or sponsor the site to advertise or promote a listing.</p>
+    </div>
+
     <div class="rail-block">
       <span class="rail-label">Recommended Tools</span>
+      <p class="rail-winwin">These are tools I use. Clicking one of these links gets you a sign-up bonus, and it also benefits the site.</p>
       <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="tool-card">
         <span class="tool-card-name">Interactive Brokers</span>
-        <span class="tool-card-tag">Brokerage · institutional execution</span>
-      </a>
-      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="tool-card">
-        <span class="tool-card-name">Wealthfront</span>
-        <span class="tool-card-tag">Automated investing · $50 bonus</span>
+        <span class="tool-card-tag">Brokerage · Institutional Execution</span>
+        <span class="tool-card-benefit">$1 of IBKR stock per $100 deposited, up to $1,000 in stock</span>
       </a>
       <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="tool-card">
         <span class="tool-card-name">Robinhood</span>
-        <span class="tool-card-tag">Active brokerage · Gold margin</span>
+        <span class="tool-card-tag">Active Brokerage · Gold Margin</span>
+        <span class="tool-card-benefit">Free stock at sign-up. Gold members get $1,000 in interest-free margin.</span>
       </a>
-      <p style="margin-top:0.85rem;font-size:0.78rem;color:var(--ink-soft);"><a href="../resources.html" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">See all resources →</a></p>
-    </div>
-
-    <div class="rail-block">
-      <span class="rail-label">Recent</span>
-      <ul class="rail-recent">
-                <li>
-          <a href="villa-maggio-frank-sinatra-last-intact-estate.html">Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</a>
-          <span class="meta">Real Estate · May 05, 2026</span>
-        </li>
-        <li>
-          <a href="a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a>
-          <span class="meta">Lifestyle · May 05, 2026</span>
-        </li>
-        <li>
-          <a href="is-using-margin-ever-a-good-idea.html">Is Using Margin Ever a Good Idea?</a>
-          <span class="meta">Markets · May 05, 2026</span>
-        </li>
-        <li>
-          <a href="what-the-margin-data-is-telling-us.html">What the Margin Data Is Telling Us</a>
-          <span class="meta">Markets · May 05, 2026</span>
-        </li>
-      </ul>
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Wealthfront</span>
+        <span class="tool-card-tag">Automated Investing · Tax-Loss Harvesting</span>
+        <span class="tool-card-benefit">$50 bonus when you fund $500.</span>
+      </a>
+      <p class="rail-foot-link"><a href="../resources.html">See all resources →</a></p>
     </div>
 
     <div class="rail-block rail-tip-jar">
-      <span class="rail-label">Support The Pinnacle</span>
-      <p>If this site is useful to you, you can leave a tip — it goes straight to the writer.</p>
-      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Buy a Coffee</a>
+      <span class="rail-label">Help Keep the Site Going</span>
+      <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
+      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
     </div>
   </aside>
 

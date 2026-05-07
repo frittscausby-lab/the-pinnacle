@@ -587,113 +587,229 @@
     .archive-list li { grid-template-columns: 1fr; gap: 0.4rem; }
     .page-header h1 { font-size: 2.2rem; }
   }
+
+  .article-inline-image { margin: 2rem 0; }
+  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
+  .article-inline-image figcaption {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--ink-soft); padding-top: 0.6rem;
+  }
 </style>
 <style>
+
+  /* ============ UNIFIED RIGHT RAIL ============ */
+  #rail {
+    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    border-left: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .rail-top-stack {
+    margin-bottom: 2.5rem;
+    padding: 1.6rem 1.4rem;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+  }
+  .rail-cta-button {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .rail-cta-subscribe {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-subscribe:hover { background: var(--gold-soft); }
+  .rail-cta-sponsor {
+    background: transparent;
+    color: var(--gold-soft);
+    border: 1px solid var(--gold);
+  }
+  .rail-cta-sponsor:hover {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-explainer {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--sidebar-muted);
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .rail-block { margin-bottom: 2.5rem; }
+  .rail-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .rail-winwin {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 1.1rem;
+  }
+
+  .tool-card {
+    display: block;
+    padding: 0.95rem 1rem;
+    background: var(--paper-soft);
+    border-left: 2px solid var(--gold);
+    margin-bottom: 0.65rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s, transform 0.15s;
+  }
+  .tool-card:hover {
+    background: #e6dfcb;
+    transform: translateX(2px);
+  }
+  .tool-card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--ink);
+    display: block;
+  }
+  .tool-card-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 0.3rem;
+    display: block;
+  }
+  .tool-card-benefit {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .rail-foot-link {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+  }
+  .rail-foot-link a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+  .rail-foot-link a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .rail-tip-jar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1rem;
+  }
+  .rail-tip-jar .rail-label { color: var(--gold-soft); }
+  .rail-tip-jar p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--sidebar-text);
+    margin-bottom: 0.85rem;
+  }
+  .rail-tip-jar a.tip-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 0.55rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .rail-tip-jar a.tip-button:hover { background: var(--gold-soft); }
+
 #wrapper { grid-template-columns: 340px minmax(0, 1fr) 280px; }
-#home-rail {
-  padding: 3.5rem 2.5rem 5rem 2.25rem;
-  border-left: 1px solid var(--rule);
-  background: var(--paper);
+
+/* Featured trio: 1 large + 2 small tiles */
+.featured-trio {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 1.4rem;
+  margin-bottom: 3rem;
 }
-.home-rail-block {
-  margin-bottom: 2.5rem;
+.featured-trio .featured { margin-bottom: 0; }
+.small-tiles-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.4rem;
 }
-.home-rail-label {
+.small-tile {
+  position: relative;
+  display: block;
+  min-height: 195px;
+  padding: 1.2rem;
+  background: linear-gradient(140deg, #2d4055 0%, #152230 100%);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: var(--paper);
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+.small-tile:hover { transform: translateY(-2px); }
+.small-tile-cat {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.95rem;
+  background: var(--gold);
+  color: var(--paper);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1rem;
-  display: block;
+  padding: 0.3rem 0.55rem;
+  font-weight: 500;
 }
-.home-rail-subscribe {
-  background: var(--sidebar-bg);
-  color: var(--sidebar-text);
-  padding: 1.6rem 1.4rem;
-}
-.home-rail-subscribe .home-rail-label {
-  color: var(--gold-soft);
-}
-.home-rail-subscribe p {
+.small-tile-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
   font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.4;
-  color: var(--sidebar-text);
-  margin-bottom: 1rem;
-}
-.home-rail-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-.home-rail-form input {
-  background: #0b0d10;
-  border: 1px solid #2a2f38;
-  padding: 0.7rem 0.85rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
   color: var(--paper);
-  font-family: inherit;
-  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
 }
-.home-rail-form button {
-  background: var(--gold);
-  color: var(--sidebar-bg);
-  border: none;
-  padding: 0.7rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 500;
-}
-.home-rail-form button:hover { background: var(--gold-soft); }
-.home-tool-card {
-  display: block;
-  padding: 0.95rem 1rem;
-  background: var(--paper-soft);
-  border-left: 2px solid var(--gold);
-  margin-bottom: 0.6rem;
-  text-decoration: none;
-  color: var(--ink);
-  transition: background 0.15s;
-}
-.home-tool-card:hover { background: #e6dfcb; }
-.home-tool-card-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  display: block;
-  color: var(--ink);
-}
-.home-tool-card-tag {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-top: 0.25rem;
-  display: block;
-}
-.home-rail-foot {
-  margin-top: 0.85rem;
-  font-size: 0.85rem;
-}
-.home-rail-foot a {
-  color: var(--gold);
-  text-decoration: none;
-  border-bottom: 1px solid var(--gold);
-}
-.home-rail-foot a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
 @media (max-width: 1100px) {
   #wrapper { grid-template-columns: 340px 1fr; }
-  #home-rail { display: none; }
+  #rail { display: none; }
 }
 @media (max-width: 960px) {
   #wrapper { grid-template-columns: 1fr; }
+  .featured-trio { grid-template-columns: 1fr; }
+  .small-tiles-stack { grid-template-rows: auto auto; }
 }
 </style>
+
 </head>
 <body>
 
@@ -707,12 +823,12 @@
     <nav class="primary">
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="categories/real-estate.html">Real Estate</a></li>
         <li><a href="categories/markets.html">Markets</a></li>
         <li><a href="categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="archive.html">Archive</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
 
@@ -760,11 +876,12 @@
 .card a:hover h3 { color: var(--gold); transition: color 0.2s; }
 </style>
     <div class="masthead-bar">
-      <div class="issue-label">Vol. II · <span>No. 017</span> · May 06, 2026</div>
+      <div class="issue-label">Vol. II · <span>No. 017</span> · May 07, 2026</div>
       <div class="search-bar"><a href="archive.html" style="color:inherit;text-decoration:none;">⌕ Archive</a></div>
     </div>
 
-    <article class="featured">
+    <div class="featured-trio">
+      <article class="featured">
       <a href="articles/villa-maggio-frank-sinatra-last-intact-estate.html" style="display:block;text-decoration:none;color:inherit;">
         <div class="featured-image" style="background: linear-gradient(180deg, rgba(20,23,28,0.05) 0%, rgba(20,23,28,0.45) 100%), url('images/villa-maggio-aerial-compound-tennis-pool.jpg'); background-size: cover; background-position: center;"></div>
         <span class="featured-category">Real Estate</span>
@@ -773,6 +890,11 @@
         <div class="byline">By <strong>Fritts Causby</strong> and <strong>Markus Canter</strong> · May 05, 2026 · Read in 5 minutes</div>
       </a>
     </article>
+      <div class="small-tiles-stack">
+        <a href="articles/a-conversation-with-scott-brown.html" class="small-tile" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 50%, rgba(20,23,28,0.55) 100%), url('images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center;"><span class="small-tile-cat">Lifestyle</span><h3 class="small-tile-title">A Conversation with Scott Brown</h3></a>
+      <a href="articles/is-using-margin-ever-a-good-idea.html" class="small-tile" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 50%, rgba(20,23,28,0.55) 100%), url('images/ramen-or-financial-stability-pop-art.jpg'); background-size: cover; background-position: center;"><span class="small-tile-cat">Markets</span><h3 class="small-tile-title">Is Using Margin Ever a Good Idea?</h3></a>
+      </div>
+    </div>
 
     <div class="section-head">
       <h2>Latest</h2>
@@ -780,24 +902,6 @@
     </div>
 
     <div class="grid">
-      <article class="card">
-        <a href="articles/a-conversation-with-scott-brown.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Lifestyle</div>
-          <h3>A Conversation with Scott Brown</h3>
-          <p>On publishing his late father&#x27;s SR-71 pilot memoir, surviving foster care, and the college roommate who became one of New York&#x27;s most notorious serial killers.</p>
-          <span class="meta">May 05 · 9 min read</span>
-        </a>
-      </article>
-      <article class="card">
-        <a href="articles/is-using-margin-ever-a-good-idea.html" style="display:block;text-decoration:none;color:inherit;">
-          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/ramen-or-financial-stability-pop-art.jpg'); background-size: cover; background-position: center;"></div>
-          <div class="card-category">Markets</div>
-          <h3>Is Using Margin Ever a Good Idea?</h3>
-          <p>After 20 years in the markets, the one decision I keep going back to is the one I didn&#x27;t make.</p>
-          <span class="meta">May 05 · 8 min read</span>
-        </a>
-      </article>
       <article class="card">
         <a href="articles/what-the-margin-data-is-telling-us.html" style="display:block;text-decoration:none;color:inherit;">
           <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/margin-debt-forced-liquidation-cascade.jpg'); background-size: cover; background-position: center top;"></div>
@@ -870,6 +974,60 @@
           <span class="meta">Feb 16 · 5 min read</span>
         </a>
       </article>
+      <article class="card">
+        <a href="articles/stocks-vs-real-estate.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/4863aa6e-33e6-4172-81a1-0bebd9242bd3/Shattered_view_of_home_and_market_rise.png'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Stocks vs. Real Estate: How to Evaluate An Asset Before You Buy</h3>
+          <p>Both markets reward patience, punish impulse, and have a long history of hiding problems in plain sight. Here is how I approach both.</p>
+          <span class="meta">Feb 12 · 6 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/9d09edd8-98a3-4990-a053-f80e23cd4aa8/NVIDIA_stock_trading_on_TIPRANKS_platform.png'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</h3>
+          <p>I spent years listening to every analyst with a microphone. Now, I&#x27;m finally pivoting away from that. Here is what I do instead.</p>
+          <span class="meta">Feb 05 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-story-of-xpo-logistics.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>The Story of XPO Logistics: A 10,000% Lesson in Conviction</h3>
+          <p>How I turned a $207 investment into $2,016 and walked away from $31,000</p>
+          <span class="meta">Jan 29 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/love-is-bald-charity-spotlight-supporting-cancer-warriors-in-north-carolina.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/love-is-bald.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>Love is Bald Charity Spotlight | Supporting Cancer Warriors in North Carolina</h3>
+          <p>A personal spotlight on Love is Bald, a North Carolina nonprofit supporting individuals affected by cancer, honoring Amy Cromartie.</p>
+          <span class="meta">Oct 08 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/timeless-john-lautner-designed-home-in-long-beach.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Timeless John Lautner-Designed Home in Long Beach</h3>
+          <p>Inside the Alexander House: A 1951 John Lautner Original in Long Beach, California</p>
+          <span class="meta">Oct 03 · 3 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-story-of-the-movie-bottle-shock.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/e2fcec11-0ddf-48b8-b8af-50351b7095ff/California_vineyard_and_wine_history.png'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>The Story of the Movie “Bottle Shock”</h3>
+          <p>How Napa Valley Got its Street Cred</p>
+          <span class="meta">Mar 09 · 4 min read</span>
+        </a>
+      </article>
     </div>
 
     <div class="outreach-line">
@@ -881,31 +1039,38 @@
       <div><a href="about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
     </div>
   </main>
-  <aside id="home-rail">
-    <div class="home-rail-block home-rail-subscribe">
-      <span class="home-rail-label">Subscribe to The Pinnacle</span>
-      <p>High-end real estate, stock market stories, and the aspirational lifestyle. Written by someone who&apos;s learned both the hard way.</p>
-      <form class="home-rail-form" action="https://thepinnacle.beehiiv.com/subscribe" method="post" target="_blank">
-        <input type="email" name="email" placeholder="Email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
+  <aside id="rail">
+    <div class="rail-top-stack">
+      <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
+      <p class="rail-cta-explainer">High-end real estate, stock market stories, and the aspirational lifestyle. Subscribe for the newsletter, or sponsor the site to advertise or promote a listing.</p>
     </div>
 
-    <div class="home-rail-block">
-      <span class="home-rail-label">Recommended Tools</span>
-      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="home-tool-card">
-        <span class="home-tool-card-name">Interactive Brokers</span>
-        <span class="home-tool-card-tag">Brokerage · Institutional Execution</span>
+    <div class="rail-block">
+      <span class="rail-label">Recommended Tools</span>
+      <p class="rail-winwin">These are tools I use. Clicking one of these links gets you a sign-up bonus, and it also benefits the site.</p>
+      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Interactive Brokers</span>
+        <span class="tool-card-tag">Brokerage · Institutional Execution</span>
+        <span class="tool-card-benefit">$1 of IBKR stock per $100 deposited, up to $1,000 in stock</span>
       </a>
-      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="home-tool-card">
-        <span class="home-tool-card-name">Wealthfront</span>
-        <span class="home-tool-card-tag">Automated Investing · $50 Bonus</span>
+      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Robinhood</span>
+        <span class="tool-card-tag">Active Brokerage · Gold Margin</span>
+        <span class="tool-card-benefit">Free stock at sign-up. Gold members get $1,000 in interest-free margin.</span>
       </a>
-      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="home-tool-card">
-        <span class="home-tool-card-name">Robinhood</span>
-        <span class="home-tool-card-tag">Active Brokerage · Robinhood Gold</span>
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Wealthfront</span>
+        <span class="tool-card-tag">Automated Investing · Tax-Loss Harvesting</span>
+        <span class="tool-card-benefit">$50 bonus when you fund $500.</span>
       </a>
-      <p class="home-rail-foot"><a href="resources.html">See all resources →</a></p>
+      <p class="rail-foot-link"><a href="resources.html">See all resources →</a></p>
+    </div>
+
+    <div class="rail-block rail-tip-jar">
+      <span class="rail-label">Help Keep the Site Going</span>
+      <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
+      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
     </div>
   </aside>
 </div>
