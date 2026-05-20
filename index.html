@@ -600,20 +600,23 @@
 
   /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-top-stack {
     margin-bottom: 2.5rem;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
   }
   .rail-cta-button {
     display: block;
-    text-align: center;
-    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     letter-spacing: 0.18em;
@@ -743,7 +746,7 @@
   }
   .rail-tip-jar a.tip-button:hover { background: var(--gold-soft); }
 
-#wrapper { grid-template-columns: 340px minmax(0, 1fr) 240px; }
+#wrapper { grid-template-columns: 340px minmax(0, 1fr) 280px; }
 
 /* Featured trio: 1 large + 2 small tiles */
 .featured-trio {
@@ -824,11 +827,14 @@
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="categories/real-estate.html">Real Estate</a></li>
         <li><a href="categories/markets.html">Markets</a></li>
         <li><a href="categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="archive.html">Archive</a></li>
         <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -876,12 +882,11 @@
 .card a:hover h3 { color: var(--gold); transition: color 0.2s; }
 </style>
     <div class="masthead-bar">
-      <div class="issue-label">Vol. II · <span>No. 017</span> · May 07, 2026</div>
+      <div class="issue-label">Vol. II · <span>No. 017</span> · May 11, 2026</div>
       <div class="search-bar"><a href="archive.html" style="color:inherit;text-decoration:none;">⌕ Archive</a></div>
     </div>
 
-    <div class="featured-trio">
-      <article class="featured">
+    <article class="featured">
       <a href="articles/villa-maggio-frank-sinatra-last-intact-estate.html" style="display:block;text-decoration:none;color:inherit;">
         <div class="featured-image" style="background: linear-gradient(180deg, rgba(20,23,28,0.05) 0%, rgba(20,23,28,0.45) 100%), url('images/villa-maggio-aerial-compound-tennis-pool.jpg'); background-size: cover; background-position: center;"></div>
         <span class="featured-category">Real Estate</span>
@@ -890,18 +895,31 @@
         <div class="byline">By <strong>Fritts Causby</strong> and <strong>Markus Canter</strong> · May 05, 2026 · Read in 5 minutes</div>
       </a>
     </article>
-      <div class="small-tiles-stack">
-        <a href="articles/a-conversation-with-scott-brown.html" class="small-tile" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 50%, rgba(20,23,28,0.55) 100%), url('images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center;"><span class="small-tile-cat">Lifestyle</span><h3 class="small-tile-title">A Conversation with Scott Brown</h3></a>
-      <a href="articles/is-using-margin-ever-a-good-idea.html" class="small-tile" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 50%, rgba(20,23,28,0.55) 100%), url('images/ramen-or-financial-stability-pop-art.jpg'); background-size: cover; background-position: center;"><span class="small-tile-cat">Markets</span><h3 class="small-tile-title">Is Using Margin Ever a Good Idea?</h3></a>
-      </div>
-    </div>
 
     <div class="section-head">
       <h2>Latest</h2>
-      <span class="count">17 pieces in the archive</span>
+      <span class="count">18 pieces in the archive</span>
     </div>
 
     <div class="grid">
+      <article class="card">
+        <a href="articles/a-conversation-with-scott-brown.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>A Conversation with Scott Brown</h3>
+          <p>On publishing his late father&#x27;s SR-71 pilot memoir, surviving foster care, and the college roommate who became one of New York&#x27;s most notorious serial killers.</p>
+          <span class="meta">May 05 · 9 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/is-using-margin-ever-a-good-idea.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/ramen-or-financial-stability-pop-art.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Is Using Margin Ever a Good Idea?</h3>
+          <p>After 20 years in the markets, the one decision I keep going back to is the one I didn&#x27;t make.</p>
+          <span class="meta">May 05 · 8 min read</span>
+        </a>
+      </article>
       <article class="card">
         <a href="articles/what-the-margin-data-is-telling-us.html" style="display:block;text-decoration:none;color:inherit;">
           <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/margin-debt-forced-liquidation-cascade.jpg'); background-size: cover; background-position: center top;"></div>

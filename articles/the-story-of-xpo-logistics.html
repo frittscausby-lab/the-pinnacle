@@ -37,7 +37,7 @@
 
   #wrapper {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr) 240px;
+    grid-template-columns: 340px minmax(0, 1fr) 280px;
     min-height: 100vh;
   }
 
@@ -107,6 +107,24 @@
   .outreach-line,
   .main-foot {
     max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  /* Inline figures inside article body: center within the body column */
+  .article-body figure,
+  .article-body .article-inline-image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .article-body figure img,
+  .article-body .article-inline-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Book-cover figures: 75% width, centered */
+  .article-body .book-cover-figure {
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -528,20 +546,23 @@
 
   /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-top-stack {
     margin-bottom: 2.5rem;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
   }
   .rail-cta-button {
     display: block;
-    text-align: center;
-    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     letter-spacing: 0.18em;
@@ -696,14 +717,6 @@
     .related-grid { grid-template-columns: 1fr; }
     .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
   }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
 </style>
 </head>
 <body>
@@ -721,11 +734,14 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
+        <li><a href="../mission.html">Mission</a></li>
+        <li><a href="../services.html">Services</a></li>
         <li><a href="../categories/real-estate.html">Real Estate</a></li>
         <li class="active"><a href="../categories/markets.html">Markets</a></li>
         <li><a href="../categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -806,10 +822,11 @@
       <figure class="article-lead-image">
         <img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png" alt="The Story of XPO Logistics: A 10,000% Lesson in Conviction">
         
+      <figcaption>Illustration: AI-generated</figcaption>
       </figure>
 
       <div class="article-body">
-        <h2>A Paper Hands Confession</h2><p>This is an honest, raw admission of a mistake that’s haunted me for years.</p><p>When I was relatively new to the stock market, I bought 144 shares of <a href="https://www.xpo.com" rel="noopener noreferrer nofollow" target="_blank">XPO Logistics</a> at $1.44 a share. A $207 investment. That was a significant amount of money for me at the time.</p><p>The shares were underwater for what felt like an interminable stretch, but I held on stubbornly, hoping to one day recover my investment. The shares doubled and I kept holding, even though I desperately needed the money.</p><p>The reason I held was <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a>. Every pundit I followed was talking about him, his track record, his investing prowess. With someone like that at the helm, how could I lose?</p><h2>The Wrong Jacobs — and Why It Matters</h2><p>The name Jacobs resonated with me for a specific reason. In the mid-2000s I worked on-site at <a href="https://www.qualcomm.com" rel="noopener noreferrer nofollow" target="_blank">Qualcomm</a> as a copy machine repairman. Like a lot of San Diego residents, I was in genuine awe of <a href="https://en.wikipedia.org/wiki/Irwin_Jacobs" rel="noopener noreferrer nofollow" target="_blank">Dr. Irwin Jacobs</a>—the MIT grad who co-founded Qualcomm in his den and went on to donate hundreds of millions to charity, including the Jacobs School of Engineering at UC San Diego and the Salk Institute.</p><p>I parked my 2003 Mitsubishi Lancer next to his son Mark's Lotus on a regular basis. I chatted with Mark and his trainer in the company gym. His trainer was one of the most beautiful women I had ever seen, and the experience certainly made an impression.</p><p>So when Brad Jacobs came along, the name carried weight for me. I assumed a family connection. I held the stock partly based on that assumption.</p><p style="text-align: center;"><span style="color: rgb(31, 78, 121); font-size: 13pt;"><i><b>Turns out Brad Jacobs is not related to Irwin Jacobs. I found that out when researching this article!</b></i></span></p><p>Is that embarrassing? Yep. Would I have continued to hold the shares if I had known? Who knows. It is worth admitting, however, because this newsletter is built on honesty, and that particular piece of my reasoning was built on a mistake.</p><p>Research was harder to come by back then. That is not an excuse, just context.</p><h2>Cashing Out at $14 — and Why I Did It</h2><p>Under Jacobs' leadership, the XPO share price climbed steadily. But with significant credit card debt and a young daughter depending on me, I made the difficult decision to sell at around $14 a share.</p><p>That $207 had turned into $2,016, boy did I feel like a genius!</p><p>Survival is the ultimate goal in investing, of course, and there are times when taking money off the table is the right call. I do not regret prioritizing my family. What I do carry is the weight of watching what came next from the sidelines. </p><h2>What the Numbers Became</h2><p>With XPO trading above $150 in early 2026—and factoring in the <a href="https://www.gxo.com" rel="noopener noreferrer nofollow" target="_blank">GXO Logistics</a> spinoff in 2021 and the <a href="https://www.rxo.com" rel="noopener noreferrer nofollow" target="_blank">RXO</a> spinoff in 2022—my original $207 investment could have grown to over $31,000. An approximately 10,000 percent return.</p><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png" alt=""></figure><p>The power of compound growth in a single conviction hold is genuinely staggering to look at in retrospect.</p><p>XPO wasn’t the only one. I sold Netflix too early. Apple. Google. Sometimes out of fear, sometimes out of necessity. The pattern is consistent enough that it eventually forced me to honestly evaluate my behavior as an investor.</p><p style="text-align: center;"><span style="color: rgb(31, 78, 121); font-size: 13pt;"><i><b>The biggest lesson isn’t about numbers. It’s about conviction, patience, and understanding your own motivations.</b></i></span> </p><h2>Who Is Brad Jacobs?</h2><p>For anyone unfamiliar with the man behind XPO's transformation: <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a> is a serial entrepreneur who built several billion-dollar companies before turning his attention to XPO in 2011. He invested $150 million into what was then a small trucking company called Express-1 Expedited Solutions, became chairman and CEO, and proceeded to execute one of the more aggressive acquisition and growth strategies in the logistics industry.</p><p>Under his leadership, XPO became a global logistics powerhouse. The company spun off <a href="https://www.gxo.com" rel="noopener noreferrer nofollow" target="_blank">GXO Logistics</a> in 2021 and <a href="https://www.rxo.com" rel="noopener noreferrer nofollow" target="_blank">RXO</a> in 2022, with XPO refocusing on less-than-truckload (LTL) freight. Jacobs is known for his relentless focus on technology, operational efficiency, and shareholder value.</p><p>In late 2025 he stepped down from XPO and GXO to focus on his new venture, <a href="https://www.qxo.com" rel="noopener noreferrer nofollow" target="_blank">QXO</a> — an attempt revolutionize building products distribution, the same way he did with logistics. Worth watching? </p><h2>What I Took From It</h2><p>My XPO story is not unique. Most long-term investors have a version of it—the one that got away, the stock they sold before it became something life-changing.</p><p>Life comes first. Debt, family, survival—those are real priorities and there is no shame in them. But the experience did sharpen something in me about the difference between selling because the thesis broke or selling out of fear and necessity.</p><p>Those are different decisions. Learning to tell them apart is most of the game.</p><p>Writing this article required me to finally research <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a> properly—which is how I discovered the Irwin connection was wrong, and also how I discovered <a href="https://www.qxo.com" rel="noopener noreferrer nofollow" target="_blank">QXO</a>. I had owned a small position for a while. After going deep on Jacobs' track record while writing this, I bought a little more.</p><p>I am not telling anyone else to do that. I am just being transparent, because that is the whole point of this newsletter.</p><p><span style="color: rgb(102, 102, 102); font-size: 11pt;"><i>Disclosure: I own shares of QXO. This is not financial advice.</i></span></p><h2>More From The Pinnacle</h2><p>If this resonated, these are worth reading next:</p><p> <a href="beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise.html" rel="noopener noreferrer nofollow" target="_blank">Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</a> — The two-tool research process I use before making any significant trade.</p><p> <a href="landmark-ray-kappe-house-up-for-sale.html" rel="noopener noreferrer nofollow" target="_blank">Landmark Ray Kappe House Up for Sale</a> — A 1967 Pacific Palisades architectural icon, on the market for the first time.</p><p><span style="color: rgb(31, 78, 121); font-size: 13pt;"><b>Want more stories from the trenches of investing?</b></span></p><p>Real lessons, real mistakes, and occasionally real wins. <a href="https://thepinnacle.beehiiv.com/subscribe" rel="noopener noreferrer nofollow" target="_blank">Subscribe to The Pinnacle free here.</a> </p>
+        <h2>A Paper Hands Confession</h2><p>This is an honest, raw admission of a mistake that’s haunted me for years.</p><p>When I was relatively new to the stock market, I bought 144 shares of <a href="https://www.xpo.com" rel="noopener noreferrer nofollow" target="_blank">XPO Logistics</a> at $1.44 a share. A $207 investment. That was a significant amount of money for me at the time.</p><p>The shares were underwater for what felt like an interminable stretch, but I held on stubbornly, hoping to one day recover my investment. The shares doubled and I kept holding, even though I desperately needed the money.</p><p>The reason I held was <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a>. Every pundit I followed was talking about him, his track record, his investing prowess. With someone like that at the helm, how could I lose?</p><h2>The Wrong Jacobs — and Why It Matters</h2><p>The name Jacobs resonated with me for a specific reason. In the mid-2000s I worked on-site at <a href="https://www.qualcomm.com" rel="noopener noreferrer nofollow" target="_blank">Qualcomm</a> as a copy machine repairman. Like a lot of San Diego residents, I was in genuine awe of <a href="https://en.wikipedia.org/wiki/Irwin_Jacobs" rel="noopener noreferrer nofollow" target="_blank">Dr. Irwin Jacobs</a>—the MIT grad who co-founded Qualcomm in his den and went on to donate hundreds of millions to charity, including the Jacobs School of Engineering at UC San Diego and the Salk Institute.</p><p>I parked my 2003 Mitsubishi Lancer next to his son Mark's Lotus on a regular basis. I chatted with Mark and his trainer in the company gym. His trainer was one of the most beautiful women I had ever seen, and the experience certainly made an impression.</p><p>So when Brad Jacobs came along, the name carried weight for me. I assumed a family connection. I held the stock partly based on that assumption.</p><p style="text-align: center;"><span style="color: rgb(31, 78, 121); font-size: 13pt;"><i><b>Turns out Brad Jacobs is not related to Irwin Jacobs. I found that out when researching this article!</b></i></span></p><p>Is that embarrassing? Yep. Would I have continued to hold the shares if I had known? Who knows. It is worth admitting, however, because this newsletter is built on honesty, and that particular piece of my reasoning was built on a mistake.</p><p>Research was harder to come by back then. That is not an excuse, just context.</p><h2>Cashing Out at $14 — and Why I Did It</h2><p>Under Jacobs' leadership, the XPO share price climbed steadily. But with significant credit card debt and a young daughter depending on me, I made the difficult decision to sell at around $14 a share.</p><p>That $207 had turned into $2,016, boy did I feel like a genius!</p><p>Survival is the ultimate goal in investing, of course, and there are times when taking money off the table is the right call. I do not regret prioritizing my family. What I do carry is the weight of watching what came next from the sidelines. </p><h2>What the Numbers Became</h2><p>With XPO trading above $150 in early 2026—and factoring in the <a href="https://www.gxo.com" rel="noopener noreferrer nofollow" target="_blank">GXO Logistics</a> spinoff in 2021 and the <a href="https://www.rxo.com" rel="noopener noreferrer nofollow" target="_blank">RXO</a> spinoff in 2022—my original $207 investment could have grown to over $31,000. An approximately 10,000 percent return.</p><p>The power of compound growth in a single conviction hold is genuinely staggering to look at in retrospect.</p><p>XPO wasn’t the only one. I sold Netflix too early. Apple. Google. Sometimes out of fear, sometimes out of necessity. The pattern is consistent enough that it eventually forced me to honestly evaluate my behavior as an investor.</p><p style="text-align: center;"><span style="color: rgb(31, 78, 121); font-size: 13pt;"><i><b>The biggest lesson isn’t about numbers. It’s about conviction, patience, and understanding your own motivations.</b></i></span> </p><h2>Who Is Brad Jacobs?</h2><p>For anyone unfamiliar with the man behind XPO's transformation: <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a> is a serial entrepreneur who built several billion-dollar companies before turning his attention to XPO in 2011. He invested $150 million into what was then a small trucking company called Express-1 Expedited Solutions, became chairman and CEO, and proceeded to execute one of the more aggressive acquisition and growth strategies in the logistics industry.</p><p>Under his leadership, XPO became a global logistics powerhouse. The company spun off <a href="https://www.gxo.com" rel="noopener noreferrer nofollow" target="_blank">GXO Logistics</a> in 2021 and <a href="https://www.rxo.com" rel="noopener noreferrer nofollow" target="_blank">RXO</a> in 2022, with XPO refocusing on less-than-truckload (LTL) freight. Jacobs is known for his relentless focus on technology, operational efficiency, and shareholder value.</p><p>In late 2025 he stepped down from XPO and GXO to focus on his new venture, <a href="https://www.qxo.com" rel="noopener noreferrer nofollow" target="_blank">QXO</a> — an attempt revolutionize building products distribution, the same way he did with logistics. Worth watching? </p><h2>What I Took From It</h2><p>My XPO story is not unique. Most long-term investors have a version of it—the one that got away, the stock they sold before it became something life-changing.</p><p>Life comes first. Debt, family, survival—those are real priorities and there is no shame in them. But the experience did sharpen something in me about the difference between selling because the thesis broke or selling out of fear and necessity.</p><p>Those are different decisions. Learning to tell them apart is most of the game.</p><p>Writing this article required me to finally research <a href="https://www.bradleyjacobs.com" rel="noopener noreferrer nofollow" target="_blank">Brad Jacobs</a> properly—which is how I discovered the Irwin connection was wrong, and also how I discovered <a href="https://www.qxo.com" rel="noopener noreferrer nofollow" target="_blank">QXO</a>. I had owned a small position for a while. After going deep on Jacobs' track record while writing this, I bought a little more.</p><p>I am not telling anyone else to do that. I am just being transparent, because that is the whole point of this newsletter.</p><p><span style="color: rgb(102, 102, 102); font-size: 11pt;"><i>Disclosure: I own shares of QXO. This is not financial advice.</i></span></p><h2>More From The Pinnacle</h2><p>If this resonated, these are worth reading next:</p><p> <a href="beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise.html" rel="noopener noreferrer nofollow" target="_blank">Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</a> — The two-tool research process I use before making any significant trade.</p><p> <a href="landmark-ray-kappe-house-up-for-sale.html" rel="noopener noreferrer nofollow" target="_blank">Landmark Ray Kappe House Up for Sale</a> — A 1967 Pacific Palisades architectural icon, on the market for the first time.</p><p><span style="color: rgb(31, 78, 121); font-size: 13pt;"><b>Want more stories from the trenches of investing?</b></span></p><p>Real lessons, real mistakes, and occasionally real wins. <a href="https://thepinnacle.beehiiv.com/subscribe" rel="noopener noreferrer nofollow" target="_blank">Subscribe to The Pinnacle free here.</a> </p>
       </div>
 
       <div class="article-tags">

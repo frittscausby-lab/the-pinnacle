@@ -37,7 +37,7 @@
 
   #wrapper {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr) 240px;
+    grid-template-columns: 340px minmax(0, 1fr) 280px;
     min-height: 100vh;
   }
 
@@ -107,6 +107,24 @@
   .outreach-line,
   .main-foot {
     max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  /* Inline figures inside article body: center within the body column */
+  .article-body figure,
+  .article-body .article-inline-image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .article-body figure img,
+  .article-body .article-inline-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Book-cover figures: 75% width, centered */
+  .article-body .book-cover-figure {
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -528,20 +546,23 @@
 
   /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-top-stack {
     margin-bottom: 2.5rem;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
   }
   .rail-cta-button {
     display: block;
-    text-align: center;
-    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     letter-spacing: 0.18em;
@@ -696,14 +717,6 @@
     .related-grid { grid-template-columns: 1fr; }
     .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
   }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
 </style>
 </head>
 <body>
@@ -721,11 +734,14 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
+        <li><a href="../mission.html">Mission</a></li>
+        <li><a href="../services.html">Services</a></li>
         <li class="active"><a href="../categories/real-estate.html">Real Estate</a></li>
         <li><a href="../categories/markets.html">Markets</a></li>
         <li><a href="../categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
 

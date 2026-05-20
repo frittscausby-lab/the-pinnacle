@@ -37,7 +37,7 @@
 
   #wrapper {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr) 240px;
+    grid-template-columns: 340px minmax(0, 1fr) 280px;
     min-height: 100vh;
   }
 
@@ -107,6 +107,24 @@
   .outreach-line,
   .main-foot {
     max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  /* Inline figures inside article body: center within the body column */
+  .article-body figure,
+  .article-body .article-inline-image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .article-body figure img,
+  .article-body .article-inline-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Book-cover figures: 75% width, centered */
+  .article-body .book-cover-figure {
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -528,20 +546,23 @@
 
   /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-top-stack {
     margin-bottom: 2.5rem;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
   }
   .rail-cta-button {
     display: block;
-    text-align: center;
-    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     letter-spacing: 0.18em;
@@ -696,14 +717,6 @@
     .related-grid { grid-template-columns: 1fr; }
     .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
   }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
 </style>
 </head>
 <body>
@@ -721,11 +734,14 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
+        <li><a href="../mission.html">Mission</a></li>
+        <li><a href="../services.html">Services</a></li>
         <li class="active"><a href="../categories/real-estate.html">Real Estate</a></li>
         <li><a href="../categories/markets.html">Markets</a></li>
         <li><a href="../categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -809,7 +825,7 @@
       </figure>
 
       <div class="article-body">
-        <h2>The Architecture</h2><p>Designed by John Lautner in 1951, this inviting mid-century modern features vaulted, exposed beam ceilings, brick/concrete floors, and extensive natural hardwoods. Large windows and glass doors create a seamless connection to the secluded, resort-like backyard, which has a large saltwater pool and spa. </p><p>Cathedral ceilings with integrated skylights and a strategic use of frosted glass bring sunlight inside without sacrificing privacy. Wide overhanging eaves shade expansive patio areas, including a walk-behind wet bar with concrete counters, allowing for the ultimate in poolside entertaining. </p><p>Other unique features include an interior garden with river stone, a towering brick fireplace, and mullioned corner windows. Many of the rooms are oriented around the back and side yards, virtually eliminating the need for window treatments. </p><h2>About the Architect</h2><p>John Lautner studied under <a href="https://en.wikipedia.org/wiki/Frank_Lloyd_Wright" rel="noopener noreferrer nofollow" target="_blank">Frank Lloyd Wright</a> at <a href="https://en.wikipedia.org/wiki/Taliesin_(studio)" rel="noopener noreferrer nofollow" target="_blank">Taliesin</a> in the 1930s before launching one of the most distinctive careers in American residential architecture. Where Wright pursued organic harmony with the landscape, Lautner pushed further into structural experimentation -- designing homes that seem to defy gravity, dissolve the boundary between indoors and outdoors, and resist any single period or style. </p><p>His most recognized works -- the flying saucer-shaped <a href="https://www.laconservancy.org/learn/historic-places/malin-residence-chemosphere/" rel="noopener noreferrer nofollow" target="_blank">Chemosphere</a>, the canyon-hugging <a href="https://en.wikipedia.org/wiki/Silvertop" rel="noopener noreferrer nofollow" target="_blank">Silvertop</a>, and the Wolff House -- are concentrated in the Los Angeles area and remain some of the most photographed private residences in the world. The <a href="http://www.johnlautner.org/" rel="noopener noreferrer nofollow" target="_blank">John Lautner Foundation</a> continues to catalog and preserve his legacy. </p><p>The Long Beach home featured here -- known as the Alexander House -- represents an earlier, more residential period of Lautner's work. Built in 1951, it predates his most iconic commissions but already shows the hallmarks: the seamless indoor-outdoor flow, the structural honesty of exposed materials, and the sense that the house was designed for the specific site and the specific light. </p><p><span style="color: rgb(51, 51, 51); font-size: 13pt;"><i>&quot;Many of Lautner's homes are now considered landmarks. The Alexander House is one of only a handful of his designs in Long Beach.&quot;</i></span> </p><h2>About the Listing Agent: Keegan Cin</h2><p><a href="https://cincoastrealty.com/" rel="noopener noreferrer nofollow" target="_blank">Keegan Cin</a> is a veteran agent with <b>Coldwell Banker Realty</b>, recognized for his tenacious work ethic and sharp negotiating skills. He credits his elite client-service approach to his unique background as a Maître d’ for a two Michelin-star restaurant and his international experience in the fashion industry.</p><p>As the founder of <a href="https://cincoastrealty.com/" rel="noopener noreferrer nofollow" target="_blank">Cin Coast Realty</a>, Keegan leverages a background in business and engineering to provide a sophisticated, analytical perspective for his clients. A Colorado native, his business is built on a foundation of referrals and a deep commitment to the unique needs of every homeowner.</p><p><b>Connect with Keegan:</b></p><ul><li><p><b>Web:</b> <a href="https://cincoastrealty.com" rel="noopener noreferrer nofollow" target="_blank">cincoastrealty.com</a></p></li><li><p><b>Email:</b> <a href="mailto:keegan.cin@cbrealty.com" rel="noopener noreferrer nofollow" target="_blank">keegan.cin@cbrealty.com</a></p></li><li><p><b>Phone:</b> <a href="https://www.google.com/search?q=tel%3A3109635595" rel="noopener noreferrer nofollow" target="_blank">(310) 963-5595</a></p></li></ul><h2>How This Article Came Together</h2><p>The text above originated as a pitch summary I wrote for <a href="https://www.bhhscalifornia.com/" rel="noopener noreferrer nofollow" target="_blank">Berkshire Hathaway HomeServices California Properties</a>, which hires me to write pitch summaries for unique estates and homes with architectural significance.</p><p> That summary caught the attention of the Robb Report, leading to a feature on one of the most architecturally significant listings to hit the Southern California market in recent years. <a href="https://robbreport.com/shelter/homes-for-sale/john-lautner-alexander-house-southern-california-long-beach-1235211563/" rel="noopener noreferrer nofollow" target="_blank">You can read the full Robb Report feature here.</a> </p><h2>Keep Reading</h2><p>If you enjoyed this piece, you might also like <a href="landmark-ray-kappe-house-up-for-sale.html" rel="noopener noreferrer nofollow" target="_blank">my feature on the landmark Ray Kappe house</a>, another rare piece of California architectural history, and <a href="stocks-vs-real-estate.html" rel="noopener noreferrer nofollow" target="_blank">my breakdown of stocks vs. real estate</a> for anyone thinking about where to put their money. </p><p><b>Enjoyed this? </b><b><a href="https://thepinnacle.beehiiv.com/subscribe" rel="noopener noreferrer nofollow" target="_blank">Subscribe to The Pinnacle</a></b> for more on high-end real estate, stocks, and the aspirational lifestyle -- written by someone who's learned both the hard way.</p><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d620f2b0-bec3-4616-9097-cf4bea8b8dae/5281EastElRoble1.jpg" alt=""><figcaption>Entry courtyard / Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6fef1924-2539-4782-9948-c527b01e5f39/5281EastElRoble3.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7aead459-6b23-47a8-a592-89d9170c8d68/5281EastElRoble6.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2479ff0f-72c1-45e8-a15b-7025401da8ab/5281EastElRoble5.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/bcdda68d-5996-4ec7-8466-d012e144b1a4/5281EastElRoble11.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure>
+        <h2>The Architecture</h2><p>Designed by John Lautner in 1951, this inviting mid-century modern features vaulted, exposed beam ceilings, brick/concrete floors, and extensive natural hardwoods. Large windows and glass doors create a seamless connection to the secluded, resort-like backyard, which has a large saltwater pool and spa. </p><p>Cathedral ceilings with integrated skylights and a strategic use of frosted glass bring sunlight inside without sacrificing privacy. Wide overhanging eaves shade expansive patio areas, including a walk-behind wet bar with concrete counters, allowing for the ultimate in poolside entertaining. </p><p>Other unique features include an interior garden with river stone, a towering brick fireplace, and mullioned corner windows. Many of the rooms are oriented around the back and side yards, virtually eliminating the need for window treatments. </p><h2>About the Architect</h2><p>John Lautner studied under <a href="https://en.wikipedia.org/wiki/Frank_Lloyd_Wright" rel="noopener noreferrer nofollow" target="_blank">Frank Lloyd Wright</a> at <a href="https://en.wikipedia.org/wiki/Taliesin_(studio)" rel="noopener noreferrer nofollow" target="_blank">Taliesin</a> in the 1930s before launching one of the most distinctive careers in American residential architecture. Where Wright pursued organic harmony with the landscape, Lautner pushed further into structural experimentation -- designing homes that seem to defy gravity, dissolve the boundary between indoors and outdoors, and resist any single period or style. </p><p>His most recognized works -- the flying saucer-shaped <a href="https://www.laconservancy.org/learn/historic-places/malin-residence-chemosphere/" rel="noopener noreferrer nofollow" target="_blank">Chemosphere</a>, the canyon-hugging <a href="https://en.wikipedia.org/wiki/Silvertop" rel="noopener noreferrer nofollow" target="_blank">Silvertop</a>, and the Wolff House -- are concentrated in the Los Angeles area and remain some of the most photographed private residences in the world. The <a href="http://www.johnlautner.org/" rel="noopener noreferrer nofollow" target="_blank">John Lautner Foundation</a> continues to catalog and preserve his legacy. </p><p>The Long Beach home featured here -- known as the Alexander House -- represents an earlier, more residential period of Lautner's work. Built in 1951, it predates his most iconic commissions but already shows the hallmarks: the seamless indoor-outdoor flow, the structural honesty of exposed materials, and the sense that the house was designed for the specific site and the specific light. </p><p><span style="color: rgb(51, 51, 51); font-size: 13pt;"><i>&quot;Many of Lautner's homes are now considered landmarks. The Alexander House is one of only a handful of his designs in Long Beach.&quot;</i></span> </p><h2>About the Listing Agent: Keegan Cin</h2><p><a href="https://cincoastrealty.com/" rel="noopener noreferrer nofollow" target="_blank">Keegan Cin</a> is a veteran agent with <b>Coldwell Banker Realty</b>, recognized for his tenacious work ethic and sharp negotiating skills. He credits his elite client-service approach to his unique background as a Maître d’ for a two Michelin-star restaurant and his international experience in the fashion industry.</p><p>As the founder of <a href="https://cincoastrealty.com/" rel="noopener noreferrer nofollow" target="_blank">Cin Coast Realty</a>, Keegan leverages a background in business and engineering to provide a sophisticated, analytical perspective for his clients. A Colorado native, his business is built on a foundation of referrals and a deep commitment to the unique needs of every homeowner.</p><p><b>Connect with Keegan:</b></p><ul><li><p><b>Web:</b> <a href="https://cincoastrealty.com" rel="noopener noreferrer nofollow" target="_blank">cincoastrealty.com</a></p></li><li><p><b>Email:</b> <a href="mailto:keegan.cin@cbrealty.com" rel="noopener noreferrer nofollow" target="_blank">keegan.cin@cbrealty.com</a></p></li><li><p><b>Phone:</b> <a href="https://www.google.com/search?q=tel%3A3109635595" rel="noopener noreferrer nofollow" target="_blank">(310) 963-5595</a></p></li></ul><h2>How This Article Came Together</h2><p>The text above originated as a pitch summary I wrote for <a href="https://www.bhhscalifornia.com/" rel="noopener noreferrer nofollow" target="_blank">Berkshire Hathaway HomeServices California Properties</a>, which hires me to write pitch summaries for unique estates and homes with architectural significance.</p><p> That summary caught the attention of the Robb Report, leading to a feature on one of the most architecturally significant listings to hit the Southern California market in recent years. <a href="https://robbreport.com/shelter/homes-for-sale/john-lautner-alexander-house-southern-california-long-beach-1235211563/" rel="noopener noreferrer nofollow" target="_blank">You can read the full Robb Report feature here.</a> </p><h2>Keep Reading</h2><p>If you enjoyed this piece, you might also like <a href="landmark-ray-kappe-house-up-for-sale.html" rel="noopener noreferrer nofollow" target="_blank">my feature on the landmark Ray Kappe house</a>, another rare piece of California architectural history, and <a href="stocks-vs-real-estate.html" rel="noopener noreferrer nofollow" target="_blank">my breakdown of stocks vs. real estate</a> for anyone thinking about where to put their money. </p><p><b>Enjoyed this? </b><b><a href="https://thepinnacle.beehiiv.com/subscribe" rel="noopener noreferrer nofollow" target="_blank">Subscribe to The Pinnacle</a></b> for more on high-end real estate, stocks, and the aspirational lifestyle -- written by someone who's learned both the hard way.</p><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/d620f2b0-bec3-4616-9097-cf4bea8b8dae/5281EastElRoble1.jpg" alt=""><figcaption>Entry courtyard / Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6fef1924-2539-4782-9948-c527b01e5f39/5281EastElRoble3.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/7aead459-6b23-47a8-a592-89d9170c8d68/5281EastElRoble6.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/2479ff0f-72c1-45e8-a15b-7025401da8ab/5281EastElRoble5.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure><figure class="article-inline-image"><img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/bcdda68d-5996-4ec7-8466-d012e144b1a4/5281EastElRoble11.jpg" alt=""><figcaption>Exclusive Studio / Courtesy of Keegan Cin, Coldwell Banker Realty</figcaption></figure>
       </div>
 
       <div class="article-tags">

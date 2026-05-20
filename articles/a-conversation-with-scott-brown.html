@@ -37,7 +37,7 @@
 
   #wrapper {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr) 240px;
+    grid-template-columns: 340px minmax(0, 1fr) 280px;
     min-height: 100vh;
   }
 
@@ -107,6 +107,24 @@
   .outreach-line,
   .main-foot {
     max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  /* Inline figures inside article body: center within the body column */
+  .article-body figure,
+  .article-body .article-inline-image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .article-body figure img,
+  .article-body .article-inline-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Book-cover figures: 75% width, centered */
+  .article-body .book-cover-figure {
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -528,20 +546,23 @@
 
   /* ============ UNIFIED RIGHT RAIL ============ */
   #rail {
-    padding: 3.5rem 2.5rem 5rem 2.25rem;
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
     border-left: 1px solid var(--rule);
     background: var(--paper);
   }
   .rail-top-stack {
     margin-bottom: 2.5rem;
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
   }
   .rail-cta-button {
     display: block;
-    text-align: center;
-    padding: 0.85rem 1rem;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
     letter-spacing: 0.18em;
@@ -696,14 +717,6 @@
     .related-grid { grid-template-columns: 1fr; }
     .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
   }
-
-  .article-inline-image { margin: 2rem 0; }
-  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
-  .article-inline-image figcaption {
-    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--ink-soft); padding-top: 0.6rem;
-  }
 </style>
 </head>
 <body>
@@ -721,11 +734,14 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
+        <li><a href="../mission.html">Mission</a></li>
+        <li><a href="../services.html">Services</a></li>
         <li><a href="../categories/real-estate.html">Real Estate</a></li>
         <li><a href="../categories/markets.html">Markets</a></li>
         <li class="active"><a href="../categories/lifestyle.html">Lifestyle</a></li>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -827,7 +843,7 @@
         <p><em>I can see how it would be very inspiring for people to hear what you've been through.</em></p>
         <p>There was a lot to this book. I never talked about this stuff for over 50 years. My wife knew some of it. As a young child, all I knew was I had a one way ticket. That's the name of the book, One Way Ticket. There was nowhere to go. You either made it or you died. You didn't just survive...I had to learn at a young age that if I'm going to make it, it's up to me.</p>
         <aside class="pullquote">"All I knew was I had a one way ticket. That's why the book is One Way Ticket. There was nowhere to go. You either made it or you died."</aside>
-        <figure class="article-inline-image"><img src="../images/one-way-ticket-cover.jpg" alt="One Way Ticket book cover by Scott Brown — pencil drawing of a young boy in 1920s clothing"><figcaption>Scott Brown's forthcoming memoir, One Way Ticket. Cover art by SMT, 2021.</figcaption></figure>
+        <figure class="article-inline-image book-cover-figure"><img src="../images/one-way-ticket-cover.jpg" alt="One Way Ticket book cover by Scott Brown — pencil drawing of a young boy in 1920s clothing"><figcaption>Scott Brown's forthcoming memoir, One Way Ticket. Cover art by SMT, 2021.</figcaption></figure>
         <p>Here's what's interesting, and maybe I didn't tell you this. When things were falling apart and we were still on base, I was sitting in my room by myself and feeling really down. They had put me back a grade and I couldn't figure out what was going on with my life. I looked up and saw a young boy dressed in 1920s garb, with the hat, the khaki pants. He was about the same age as me. He walked through my room and then vanished. I wasn't afraid. I thought, "Wow, I'm six years old, that's pretty interesting." So, I told my mom I saw an angel. Next thing you know, I'm in with psychologists, psychiatrists. They figured I was crazy. It was time to put me away.</p>
         <p class="qa-q">That's terrible.</p>
         <p>Through my whole life, I never really talked about it, because when I did, I got put away. I mentioned it once to my wife. You can sit in group settings sometimes where somebody will bring up a topic, like "Have you ever seen an angel or an apparition?" And I'd go, "Yeah, I did." And they listened to me. I can remember every detail of this, which now I call a guardian angel walking through my room. Every detail, even today, as if it happened a minute ago.</p>
