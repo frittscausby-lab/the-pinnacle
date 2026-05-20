@@ -40,8 +40,8 @@ use ../images/<filename> instead of the Beehiiv URL.
            https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/96699286-00a0-4a13-9986-67bf908eeaf2/image.jpg
 
 -- true-wealth-the-story-of-lady-leslie-ridley-tree (1 images)
-   [lead  ] Lady_Leslie.jpg
-           https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a8f95889-1bf1-40d9-936f-14a02b8efa41/Lady_Leslie.jpg
+   [lead  ] lady-leslie.jpg
+           local (self-hosted) — Photography by Paul Wellman
 
 -- lady-leslie-s-montecito-estate-now-for-sale (10 images)
    [lead  ] lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg
