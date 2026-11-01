@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Never Stops | Veterans Memorial Reef Charity Spotlight | The Pinnacle</title>
+<meta name="description" content="A North Carolina nonprofit places veterans in a memorial reef five miles offshore, where they protect the coastline and shelter marine life. A charity spotlight on Veterans Memorial Reef.">
+<link rel="canonical" href="https://thepinnacle.ink/articles/service-never-stops-veterans-memorial-reef-charity-spotlight.html">
+<link rel="alternate" type="application/rss+xml" title="The Pinnacle" href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14171c;
+    --ink-soft: #2a2f38;
+    --paper: #f6f1e7;
+    --paper-soft: #efe9dc;
+    --rule: #d9d1bf;
+    --gold: #a68442;
+    --gold-soft: #c8a867;
+    --sidebar-bg: #111418;
+    --sidebar-text: #d8d2c2;
+    --sidebar-muted: #8a8578;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr) 280px;
+    min-height: 100vh;
+  }
+
+  /* ============ SIDEBAR ============ */
+  /* Identical to preview file — same structure across every page for consistency */
+  #sidebar {
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 3rem 2.5rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #000;
+  }
+
+  .logo-block { padding-bottom: 2rem; border-bottom: 1px solid #2a2f38; margin-bottom: 1.75rem; }
+  .logo-mark { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 2.35rem; letter-spacing: 0.08em; color: var(--paper); line-height: 1; margin-bottom: 0.4rem; }
+  .logo-mark em { font-style: italic; font-weight: 400; color: var(--gold-soft); }
+  .logo-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 0.2em; color: var(--sidebar-muted); text-transform: uppercase; }
+  .logo-mark a, .logo-tag a { color: inherit; text-decoration: none; }
+
+  nav.primary { margin-bottom: 2rem; }
+  nav.primary ul { list-style: none; }
+  nav.primary li { border-bottom: 1px solid #1e2228; }
+  nav.primary a { display: block; padding: 0.75rem 0; color: var(--sidebar-text); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; letter-spacing: 0.03em; transition: color 0.2s, padding 0.2s; }
+  nav.primary a:hover { color: var(--gold-soft); padding-left: 0.5rem; }
+  nav.primary .active a { color: var(--gold-soft); font-style: italic; }
+
+  .sidebar-section { margin-bottom: 2rem; }
+  .sidebar-label { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 1rem; display: block; }
+
+  .mini-posts { list-style: none; }
+  .mini-posts li { padding: 0.85rem 0; border-top: 1px solid #1e2228; }
+  .mini-posts li:first-child { border-top: none; padding-top: 0; }
+  .mini-posts a { color: var(--sidebar-text); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 1rem; line-height: 1.35; display: block; font-style: italic; }
+  .mini-posts a:hover { color: var(--gold-soft); }
+  .mini-posts .meta { font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; letter-spacing: 0.15em; color: var(--sidebar-muted); text-transform: uppercase; font-style: normal; margin-top: 0.25rem; display: block; }
+
+  .signup-block { background: #181c22; padding: 1.5rem; border: 1px solid #252a33; }
+  .signup-block p { font-size: 0.88rem; color: var(--sidebar-muted); margin-bottom: 0.9rem; line-height: 1.5; }
+  .signup-form { display: flex; flex-direction: column; gap: 0.6rem; }
+  .signup-form input { background: #0b0d10; border: 1px solid #2a2f38; padding: 0.7rem 0.85rem; color: var(--paper); font-family: inherit; font-size: 0.88rem; }
+  .signup-form button { background: var(--gold); color: var(--sidebar-bg); border: none; padding: 0.7rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; font-weight: 500; transition: background 0.2s; }
+  .signup-form button:hover { background: var(--gold-soft); }
+
+  .socials { display: flex; gap: 1rem; padding-top: 1.25rem; border-top: 1px solid #1e2228; margin-top: 1.5rem; }
+  .socials a { color: var(--sidebar-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; }
+  .socials a:hover { color: var(--gold-soft); }
+
+  .sidebar-foot { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #1e2228; font-family: 'JetBrains Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; color: var(--sidebar-muted); text-transform: uppercase; }
+
+  /* ============ MAIN CONTENT ============ */
+  #main {
+    padding: 3.5rem 3.5rem 5rem 3.5rem;
+    max-width: none;
+  }
+
+  /* Constrain main content blocks to match article body width */
+  .masthead-bar,
+  .breadcrumb,
+  .article-header,
+  .article-lead-image,
+  .article-tags,
+  .article-cta,
+  .related,
+  .outreach-line,
+  .main-foot {
+    max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  /* Inline figures inside article body: center within the body column */
+  .article-body figure,
+  .article-body .article-inline-image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .article-body figure img,
+  .article-body .article-inline-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Book-cover figures: 75% width, centered */
+  .article-body .book-cover-figure {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .masthead-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 3rem;
+  }
+  .masthead-bar a { color: inherit; text-decoration: none; }
+  .issue-label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-soft); }
+  .issue-label span { color: var(--gold); }
+  .search-bar { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.15em; color: var(--ink-soft); text-transform: uppercase; }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+  }
+  .breadcrumb a { color: var(--gold); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--ink); }
+  .breadcrumb .sep { margin: 0 0.5em; color: var(--rule); }
+
+  /* Article header */
+  .article-header { margin-bottom: 2.5rem; }
+  .article-category-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .article-category-tag a { color: inherit; text-decoration: none; }
+
+  .article-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 1.1rem;
+    color: var(--ink);
+  }
+  .article-title em { font-style: italic; color: var(--gold); }
+
+  .article-dek {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 1.5rem;
+    max-width: 720px;
+  }
+
+  .article-byline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .article-byline strong { color: var(--ink); font-weight: 500; }
+
+  /* Lead image */
+  .article-lead-image {
+    margin: 0 0 2.5rem;
+    width: 100%;
+  }
+  .article-lead-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .article-lead-image figcaption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-top: 0.6rem;
+  }
+
+  /* ============ ARTICLE BODY ============ */
+  .article-body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--ink);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-body p {
+    margin-bottom: 1.4rem;
+  }
+
+  /* Drop cap on first paragraph */
+  .article-body > p:first-of-type::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 0.9;
+    float: left;
+    padding: 0.35rem 0.6rem 0 0;
+    color: var(--gold);
+  }
+
+  .article-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 2.5rem 0 1rem;
+    color: var(--ink);
+  }
+
+  .article-body h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.25;
+    margin: 2rem 0 0.85rem;
+    color: var(--ink);
+  }
+
+  .article-body h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 2rem 0 0.6rem;
+  }
+
+  .article-body a {
+    color: var(--gold);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s;
+  }
+  .article-body a:hover { color: var(--ink); }
+
+  .article-body strong { font-weight: 600; color: var(--ink); }
+  .article-body em { font-style: italic; }
+
+  .article-body ul,
+  .article-body ol {
+    margin: 0 0 1.5rem 1.5rem;
+  }
+  .article-body li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+  }
+
+  .article-body blockquote {
+    margin: 2rem 0;
+    padding: 0 0 0 1.75rem;
+    border-left: 3px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+
+  .article-body blockquote p { margin-bottom: 0.8rem; }
+  .article-body blockquote cite {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 0.6rem;
+  }
+
+  .article-body figure {
+    margin: 2rem 0;
+  }
+  .article-body figure img,
+  .article-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .article-body figcaption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-top: 0.6rem;
+  }
+
+  .article-body hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem auto;
+    width: 50%;
+  }
+
+  /* Pull quote — gold rule above and below */
+  .pullquote {
+    margin: 2.5rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--ink);
+  }
+
+  /* Tag list at bottom of article */
+  .article-tags {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .article-tags-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-right: 0.5rem;
+  }
+  .article-tags a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--rule);
+    transition: all 0.15s;
+  }
+  .article-tags a:hover {
+    background: var(--gold);
+    color: var(--paper);
+    border-color: var(--gold);
+  }
+
+  /* End-of-article signup pitch */
+  .article-cta {
+    margin-top: 3.5rem;
+    padding: 2rem;
+    background: var(--paper-soft);
+    border-left: 3px solid var(--gold);
+  }
+  .article-cta-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .article-cta h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+  .article-cta p {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-bottom: 1.1rem;
+  }
+  .article-cta-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .article-cta-form input {
+    flex: 1 1 220px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 0.7rem 0.85rem;
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .article-cta-form button {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .article-cta-form button:hover { background: var(--gold); }
+
+  /* Related articles strip */
+  .related {
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid var(--ink);
+  }
+  .related-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1.5rem;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .related-item .card-category {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .related-item h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+  }
+  .related-item h4 a { color: var(--ink); text-decoration: none; }
+  .related-item h4 a:hover { color: var(--gold); }
+  .related-item .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: #7a746a;
+    text-transform: uppercase;
+  }
+
+  /* Footer */
+  .main-foot {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+  .main-foot a { color: inherit; text-decoration: none; }
+  .main-foot a:hover { color: var(--gold); }
+
+
+  /* Q&A interview format */
+  .article-body .qa-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: var(--gold);
+    margin: 2.25rem 0 1.1rem;
+    padding-left: 1.4rem;
+    border-left: 3px solid var(--gold);
+  }
+  .article-body .qa-q em { font-style: normal; }
+  /* Cancel drop cap when first paragraph is a Q&A question */
+  .article-body > .qa-q:first-child::first-letter,
+  .article-body > p:first-of-type.qa-q::first-letter { all: unset; }
+  /* Make sure drop cap only applies to the first regular <p>, not first qa-q */
+  .article-body > p:first-of-type:not(.qa-q)::first-letter { /* drop cap rule already in main CSS */ }
+
+  /* Closing editorial note (italic gray paragraphs at end of articles) */
+  .article-body .closing-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .article-body .closing-note em { font-style: italic; }
+
+
+
+  /* ============ UNIFIED RIGHT RAIL ============ */
+  #rail {
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
+    border-left: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .rail-top-stack {
+    margin-bottom: 2.5rem;
+    padding: 1.4rem 1.1rem;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+  }
+  .rail-cta-button {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .rail-cta-subscribe {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-subscribe:hover { background: var(--gold-soft); }
+  .rail-cta-sponsor {
+    background: transparent;
+    color: var(--gold-soft);
+    border: 1px solid var(--gold);
+  }
+  .rail-cta-sponsor:hover {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-explainer {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--sidebar-muted);
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .rail-block { margin-bottom: 2.5rem; }
+  .rail-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .rail-winwin {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 1.1rem;
+  }
+
+  .tool-card {
+    display: block;
+    padding: 0.95rem 1rem;
+    background: var(--paper-soft);
+    border-left: 2px solid var(--gold);
+    margin-bottom: 0.65rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s, transform 0.15s;
+  }
+  .tool-card:hover {
+    background: #e6dfcb;
+    transform: translateX(2px);
+  }
+  .tool-card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--ink);
+    display: block;
+  }
+  .tool-card-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 0.3rem;
+    display: block;
+  }
+  .tool-card-benefit {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .rail-foot-link {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+  }
+  .rail-foot-link a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+  .rail-foot-link a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .rail-tip-jar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1rem;
+  }
+  .rail-tip-jar .rail-label { color: var(--gold-soft); }
+  .rail-tip-jar p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--sidebar-text);
+    margin-bottom: 0.85rem;
+  }
+  .rail-tip-jar a.tip-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 0.55rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .rail-tip-jar a.tip-button:hover { background: var(--gold-soft); }
+
+
+  /* Outreach footer line */
+  .outreach-line {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--rule);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .outreach-line a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .outreach-line a:hover { color: var(--ink); }
+
+  @media (max-width: 960px) {
+    #wrapper { grid-template-columns: 1fr; }
+    #rail { display: none; }
+    #sidebar { position: static; height: auto; }
+    #main { padding: 2rem 1.5rem; }
+    .article-title { font-size: 2.3rem; }
+    .article-body > p:first-of-type::first-letter { font-size: 3.2rem; }
+    .related-grid { grid-template-columns: 1fr; }
+    .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
+  }
+
+  /* ---- Charity spotlight: update + support boxes ---- */
+  .spotlight-update, .spotlight-support {
+    max-width: 720px; margin: 2.5rem auto 0; padding: 1.5rem 1.75rem;
+    background: var(--paper-soft); border-left: 3px solid var(--gold);
+  }
+  .spotlight-support { border-left: none; border-top: 3px solid var(--gold); text-align: left; }
+  .spotlight-label { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  .spotlight-update p, .spotlight-support p { font-size: 0.98rem; line-height: 1.6; margin-bottom: 0.8rem; }
+  .spotlight-support h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 500; margin-bottom: 0.6rem; }
+  .spotlight-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.1rem 0; }
+  .spotlight-btn { display: inline-block; padding: 0.75rem 1.2rem; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; }
+  .spotlight-btn:hover { background: var(--ink); color: var(--paper); }
+  .spotlight-btn-primary { background: var(--gold); border-color: var(--gold); color: var(--paper); }
+  .spotlight-btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+  .spotlight-aside { font-style: italic; font-size: 0.92rem !important; color: var(--ink-soft); margin-bottom: 0 !important; }
+  .article-byline a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .article-byline a:hover { color: var(--ink); }
+  .spotlight-update a, .spotlight-support a:not(.spotlight-btn) { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .article-body .spotlight-btn { color: var(--ink); text-decoration: none; }
+  .article-body .spotlight-btn:hover { color: var(--paper); }
+  .article-body .spotlight-btn-primary { color: var(--paper); }
+  .article-body .spotlight-btn-primary:hover { color: var(--paper); }
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+  <!-- =============== SIDEBAR (identical across site) =============== -->
+  <aside id="sidebar">
+    <div class="logo-block">
+      <div class="logo-mark"><a href="../index.html">The <em>Pinnacle</em></a></div>
+      <div class="logo-tag">Real Estate · Markets · Lifestyle</div>
+    </div>
+
+    <nav class="primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../mission.html">Mission</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../categories/real-estate.html">Real Estate</a></li>
+        <li><a href="../categories/markets.html">Markets</a></li>
+        <li class="active"><a href="../categories/lifestyle.html">Lifestyle</a></li>
+        <li><a href="../archive.html">Archive</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">From the Archive</span>
+      <ul class="mini-posts">
+                <li>
+          <a href="../articles/villa-maggio-frank-sinatra-last-intact-estate.html">Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</a>
+          <span class="meta">Real Estate · May 2026</span>
+        </li>
+        <li>
+          <a href="../articles/a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a>
+          <span class="meta">Lifestyle · May 2026</span>
+        </li>
+        <li>
+          <a href="../articles/is-using-margin-ever-a-good-idea.html">Is Using Margin Ever a Good Idea?</a>
+          <span class="meta">Markets · May 2026</span>
+        </li>
+        <li>
+          <a href="../articles/what-the-margin-data-is-telling-us.html">What the Margin Data Is Telling Us</a>
+          <span class="meta">Markets · May 2026</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section signup-block">
+      <span class="sidebar-label">The Newsletter</span>
+      <p>Delivered weekly. High-end real estate, stock market signal, and the aspirational lifestyle.</p>
+      <form class="signup-form" action="https://thepinnacle.beehiiv.com/subscribe" method="post" target="_blank">
+        <input type="email" name="email" placeholder="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="socials">
+      <a href="https://instagram.com/thepinnaclebyfritts" target="_blank">IG</a>
+      <a href="#" target="_blank">YT</a>
+      <a href="#" target="_blank">FB</a>
+      <a href="#" target="_blank">X</a>
+      <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">RSS</a>
+    </div>
+
+    <div class="sidebar-foot">
+      © 2026 The Pinnacle<br>
+      By Fritts Causby
+    </div>
+  </aside>
+
+  <!-- =============== MAIN =============== -->
+  <main id="main">
+
+    <div class="masthead-bar">
+      <div class="issue-label">Vol. II · <span>No. 018</span> · November 01, 2026</div>
+      <div class="search-bar"><a href="../archive.html">⌕ Archive</a></div>
+    </div>
+
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <a href="../categories/lifestyle.html">Lifestyle</a>
+      <span class="sep">/</span>
+      Service Never Stops
+    </nav>
+
+    <article>
+
+      <header class="article-header">
+        <div class="article-category-tag"><a href="../categories/lifestyle.html">Lifestyle</a></div>
+        <h1 class="article-title">Service Never Stops</h1>
+        <p class="article-dek">Veterans continue protecting the coastline at Veterans Memorial Reef</p>
+        <div class="article-byline">
+          <span>By <strong>Fritts Causby</strong></span>
+          <span>November 01, 2026</span>
+          <span>5 min read</span>
+          <span>Originally published in <a href="https://wrightsvillebeachmagazine.com/service-never-stops" target="_blank" rel="noopener noreferrer">Wrightsville Beach Magazine</a>, July 2023</span>
+        </div>
+      </header>
+
+      <figure class="article-lead-image">
+        <img src="../images/veterans-memorial-reef.jpg" alt="Illustration of a memorial marker being lowered from a work boat into calm ocean water at sunrise while a uniformed veteran and a woman holding a folded American flag look on">
+        <figcaption>AI-GENERATED ILLUSTRATION · NOT A PHOTOGRAPH OF A REAL CEREMONY</figcaption>
+      </figure>
+
+      <div class="article-body">
+        <p>A local nonprofit based in Carolina Beach, North Carolina, has created an innovative new way to honor veterans of the US Armed Forces, with the establishment of Veterans Memorial Reef. The reef is an approximately 162-acre site consisting of large concrete memorial markers, where the cremated remains of veteran service members are placed.</p>
+        <p>The artificial reef is known as AR-372 and is located around 5 miles offshore. “For locals who have fished this area, the site is known as five mile boxcars,” said Thomas Marcinowski, founder of the Veterans Memorial Reef nonprofit organization. “This is because some train boxcars were dropped out there many years ago.”</p>
+        <p>Now, the site is being used as a home for specially crafted, ocean-friendly memorial markers, so the veterans can continue in their service to the country by protecting the coastline, as well as by providing a habitat for marine life. “The urns become a part of the existing ocean reefs and create a habitat for fish and sea creatures,” said Marcinowski.</p>
+        <p>A veteran of the US Army, Marcinowski established the nonprofit in response to the fact that Federal cemeteries are running out of space. He pointed out that cemeteries also represent an ongoing cost for the government, as there is a need to pay for electricity to keep the lights on and a groundskeeper for property maintenance.</p>
+        <p>“This is why we say this is an eco-friendly, economical alternative,” added Marcinowski. “Once the veterans are placed out there, they’re there for eternity, there’s nothing else to do or to worry about. That’s why our motto is, ‘Those who served continue to serve.’”</p>
+        <p>Marcinowski recently hosted the organization’s third annual Fallen Heroes Ceremony at the USS North Carolina Battleship Park, to commemorate the placement of five more local veterans on the reef. This year, the ceremony and the placement of the aquatic memorial urns is coinciding with the retirement of the US Coast Guard inland buoy tender Bayberry, a vessel that was commissioned in 1954.</p>
+        <p>The Bayberry will be dropping the urns in the water at Veterans Memorial Reef, in what will be its final mission. “The crew and the commander in chief are very excited about doing this,” said Marcinowski.</p>
+        <p>The Bayberry will then be transported to the US Coast Guard sector field office at Fort Macon, where it will be decommissioned.</p>
+        <p>After the urns are dropped in the water, divers re-orient the urns to face in an eastwardly direction. “Nine of the existing urns have already been repositioned by the Marine Special Operations Dive Team out of Camp Lejeune,” noted Marcinowski. “The purpose of having the markers face east is so that the sun rises on the veterans every morning.”</p>
+        <p>The markers are located 52 feet underwater and are unlikely to move. Each plaque includes the veteran’s name and other information similar to a burial marker, but Marcinowski has taken it a step further by including a serial number that corresponds to an online database. This allows for friends and family members to find the location through GPS markers.</p>
+        <p>The website also has an accordion page for each veteran, so that anyone who is interested can click on the veteran’s name and instantly read their biography, see photos and find information about their awards and distinctions, if applicable. “One of my goals is education,” said Marcinowski. “From an educational standpoint, if you click on the award, it gives you a link to a description of the award and why the veteran would have earned it.”</p>
+        <p>The other component of the educational mission is to promote the concept to the National Cemetery Administration and institutions of higher learning. “We’re teaming up with UNCW Marine Science students and they’re going to study the reef to see how it impacts the ecosystem, how we are affecting the coast and how we can to make it better,” added Marcinowski.</p>
+        <p>Artificial reef technology has already been proven effective in terms of its ability to protect the coastline, at the Brunswick Town historic site. As discussed in a previous issue, the historic site and its Colonial-era wharves were at risk from constant tidal forces and dynamic wave action. Important historical artifacts were being washed into the Cape Fear River, and the erosion was destroying valuable coastal resources.</p>
+        <p>Scenic Consulting Group installed 220 feet of ‘Reefmaker’ at Brunswick Town, a living shoreline wave attenuation system built from concrete, along the area with the highest erosion. The second phase installed an additional 240 feet, just before Hurricane Florence in 2018. Since then, many have noticed a variety of organisms thriving in the new habitat, from river otters, fish and seabirds, to oysters, crabs and shoreline marsh grasses.</p>
+        <p>The North Carolina Division of Marine Fisheries (NCDMF) currently maintains a network of 42 artificial reefs in the ocean and 22 in the state’s estuaries. The stated purpose is to provide a spawning and foraging habitat for many species of fish and to establish oyster sanctuaries.</p>
+        <p>Another goal is to compensate for the previous destruction of coastal habitats and the reduction of water quality. A side benefit is that the artificial reefs program has caused recreational SCUBA diving in North Carolina to expand significantly in recent years.</p>
+        <p>Part of the reason that North Carolina has become a destination for divers is the NCDMF used a variety of old boats to build the reefs. Since the scuttled vessels consist of everything from trawlers and fishing boats, to barges, dredgers and sailboats, even a few old Navy ships that saw action in WWII, the Korean War and the Cuban Missile Crisis, there are many areas of interest.</p>
+        <p>Tourism and the military are essential to the economy of the Cape Fear and the state of North Carolina. Tourism depends on the health and stability of the environment, yet increasingly, effectively protecting it is requiring innovation and creativity. Veterans Memorial Reef stands at the intersection of all of these ideas, making it a viable paradigm for the future.</p>
+        <p>As the saying goes, ‘All gave some, some gave all.’ It refers to the many sacrifices our veterans have made in service to the country, regardless of whether they lost their lives in battle. For the most part, these men and women were volunteers. If presented with the choice of either spending eternity in a graveyard while becoming an ongoing cost for the government, or protecting the coastline while serving as a home for marine life, it’s easy to imagine which path most veterans would choose.</p>
+
+        <aside class="spotlight-update">
+          <div class="spotlight-label">Update · 2026</div>
+          <p>This article was written in 2023. According to <a href="https://portcitydaily.com/story/2026/05/14/veterans-memorial-reef-to-honor-10-fallen-soldiers/" target="_blank" rel="noopener noreferrer">Port City Daily</a>, the reef now holds about 30 veterans and has room for up to 2,500. This spring the nonprofit planned to honor 10 more fallen service members, with a public ceremony at the Fort Johnston-Southport Museum &amp; Visitors Center on May 16, and families taking the memorial markers out by boat on May 18.</p>
+        </aside>
+
+        <aside class="spotlight-support">
+          <div class="spotlight-label">Support the Reef</div>
+          <h3>Those who served continue to serve</h3>
+          <p>Veterans Memorial Reef is a nonprofit. You can donate to its mission, read about the families it serves, or follow its events at its website.</p>
+          <div class="spotlight-buttons">
+            <a class="spotlight-btn spotlight-btn-primary" href="https://www.zeffy.com/en-US/donation-form/those-who-served-continue-to-serve" target="_blank" rel="noopener noreferrer">Donate to Veterans Memorial Reef</a>
+            <a class="spotlight-btn" href="https://veteransmemorialreef.net/" target="_blank" rel="noopener noreferrer">Visit the website</a>
+          </div>
+          <p class="spotlight-aside">Enjoy stories like this one? <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer">Buy me a coffee</a> to help keep The Pinnacle going.</p>
+        </aside>
+
+      </div>
+
+      <div class="article-tags">
+        <span class="article-tags-label">Tags</span>
+        <a href="../archive.html">Charity Spotlight</a> <a href="../archive.html">Veterans</a> <a href="../archive.html">North Carolina Nonprofit Spotlight</a> <a href="../archive.html">Cape Fear Coast</a>
+      </div>
+
+      <aside class="article-cta">
+        <div class="article-cta-label">Subscribe</div>
+        <h3>Subscribe to The Pinnacle</h3>
+        <p>High-end real estate, stock market stories, and the aspirational lifestyle. Written by someone who&apos;s learned both the hard way.</p>
+        <form class="article-cta-form" action="https://thepinnacle.beehiiv.com/subscribe" method="post" target="_blank">
+          <input type="email" name="email" placeholder="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </aside>
+
+    </article>
+
+    <section class="related">
+      <div class="related-label">Read Next</div>
+      <div class="related-grid">
+                <article class="related-item">
+          <div class="card-category">Lifestyle</div>
+          <h4><a href="a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a></h4>
+          <span class="meta">May 05, 2026</span>
+        </article>
+        <article class="related-item">
+          <div class="card-category">Lifestyle</div>
+          <h4><a href="spaceplanes-reaching-new-heights.html">Spaceplanes Reaching New Heights</a></h4>
+          <span class="meta">Apr 09, 2026</span>
+        </article>
+        <article class="related-item">
+          <div class="card-category">Lifestyle</div>
+          <h4><a href="true-wealth-the-story-of-lady-leslie-ridley-tree.html">True Wealth: The Story of Lady Leslie Ridley-Tree</a></h4>
+          <span class="meta">Feb 26, 2026</span>
+        </article>
+      </div>
+    </section>
+
+    <div class="outreach-line">
+      Want help developing content like this for your business or brand? Visit <a href="https://frittscausby.com" target="_blank" rel="noopener noreferrer">frittscausby.com</a>.
+    </div>
+
+    <div class="main-foot">
+      <div>The Pinnacle · Published on GitHub Pages · Delivered via Beehiiv</div>
+      <div><a href="../about.html">Masthead</a> · <a href="../about.html">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">RSS</a></div>
+    </div>
+
+  </main>
+
+  <aside id="rail">
+    <div class="rail-top-stack">
+      <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
+      <p class="rail-cta-explainer">High-end real estate, stock market stories, and the aspirational lifestyle. Subscribe for the newsletter, or sponsor the site to advertise or promote a listing.</p>
+    </div>
+
+    <div class="rail-block">
+      <span class="rail-label">Recommended Tools</span>
+      <p class="rail-winwin">These are tools I use. Clicking one of these links gets you a sign-up bonus, and it also benefits the site.</p>
+      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Interactive Brokers</span>
+        <span class="tool-card-tag">Brokerage · Institutional Execution</span>
+        <span class="tool-card-benefit">$1 of IBKR stock per $100 deposited, up to $1,000 in stock</span>
+      </a>
+      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Robinhood</span>
+        <span class="tool-card-tag">Active Brokerage · Gold Margin</span>
+        <span class="tool-card-benefit">Free stock at sign-up. Gold members get $1,000 in interest-free margin.</span>
+      </a>
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Wealthfront</span>
+        <span class="tool-card-tag">Automated Investing · Tax-Loss Harvesting</span>
+        <span class="tool-card-benefit">$50 bonus when you fund $500.</span>
+      </a>
+      <p class="rail-foot-link"><a href="../resources.html">See all resources →</a></p>
+    </div>
+
+    <div class="rail-block rail-tip-jar">
+      <span class="rail-label">Help Keep the Site Going</span>
+      <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
+      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
+    </div>
+  </aside>
+
+</div>
+
+</body>
+</html>
