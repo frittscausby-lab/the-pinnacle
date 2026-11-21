@@ -717,6 +717,9 @@
     .related-grid { grid-template-columns: 1fr; }
     .main-foot { flex-direction: column; gap: 0.6rem; align-items: flex-start; }
   }
+
+  /* Rail content follows the reader down the page */
+  .rail-inner { position: sticky; top: 1.5rem; }
 </style>
 </head>
 <body>
@@ -820,9 +823,8 @@
       </header>
 
       <figure class="article-lead-image">
-        <img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/6c3de8ec-7228-440f-ba09-36468a4263e2/xpo-stock-price.png" alt="The Story of XPO Logistics: A 10,000% Lesson in Conviction">
-        
-      <figcaption>Illustration: AI-generated</figcaption>
+        <img src="../images/xpo-stock-chart-2008-2026.jpg" alt="XPO adjusted stock price, 2008 to 2026, log scale">
+        <figcaption>Chart: The Pinnacle · Data: Alpha Vantage</figcaption>
       </figure>
 
       <div class="article-body">
@@ -878,7 +880,7 @@
 
   </main>
 
-  <aside id="rail">
+  <aside id="rail"><div class="rail-inner">
     <div class="rail-top-stack">
       <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
@@ -911,9 +913,14 @@
       <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
       <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
     </div>
+  </div>
   </aside>
 
 </div>
 
+<script>
+/* Keep the right rail in view: if it is taller than the window, it scrolls until its bottom shows, then holds */
+(function(){var r=document.querySelector('.rail-inner');if(!r)return;function f(){r.style.top=Math.min(24,window.innerHeight-r.offsetHeight-24)+'px';}f();window.addEventListener('resize',f);window.addEventListener('load',f);})();
+</script>
 </body>
 </html>

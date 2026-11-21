@@ -595,6 +595,9 @@
     letter-spacing: 0.15em; text-transform: uppercase;
     color: var(--ink-soft); padding-top: 0.6rem;
   }
+
+  /* Rail content follows the reader down the page */
+  .rail-inner { position: sticky; top: 1.5rem; }
 </style>
 <style>
   /* ============ UNIFIED RIGHT RAIL ============ */
@@ -892,7 +895,7 @@
       <div><a href="../about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="../about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
     </div>
   </main>
-  <aside id="rail">
+  <aside id="rail"><div class="rail-inner">
     <div class="rail-top-stack">
       <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
@@ -925,8 +928,13 @@
       <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
       <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
     </div>
+  </div>
   </aside>
 </div>
 
+<script>
+/* Keep the right rail in view: if it is taller than the window, it scrolls until its bottom shows, then holds */
+(function(){var r=document.querySelector('.rail-inner');if(!r)return;function f(){r.style.top=Math.min(24,window.innerHeight-r.offsetHeight-24)+'px';}f();window.addEventListener('resize',f);window.addEventListener('load',f);})();
+</script>
 </body>
 </html>
