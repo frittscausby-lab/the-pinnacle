@@ -18,14 +18,13 @@
     if (!b) return;
     var bar = b.closest('.share-bar'), url = bar.getAttribute('data-url') || location.href, title = bar.getAttribute('data-title') || document.title;
     if (b.getAttribute('data-share') === 'copy') {
-      copy(url).then(function () { note(bar, 'Link copied.'); });
+      copy(url).then(function () { note(bar, 'Link copied.'); }, function () { note(bar, 'Copy the link from the address bar.'); });
     } else if (b.getAttribute('data-share') === 'instagram') {
       if (touch && navigator.share) {
         navigator.share({ title: title, url: url }).catch(function () {});
       } else {
-        copy(url).then(function () {
-          note(bar, 'Link copied. Instagram only shares links from the phone app: paste it into a story with the link sticker, or into your bio.');
-        });
+        var msg = 'Instagram only shares links from its phone app: add this link to a story with the link sticker, or to your bio.';
+        copy(url).then(function () { note(bar, 'Link copied. ' + msg); }, function () { note(bar, msg); });
       }
     }
   });
