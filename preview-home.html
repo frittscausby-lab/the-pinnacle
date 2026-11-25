@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pinnacle | High-End Real Estate, Markets, and the Aspirational Lifestyle</title>
+<meta name="description" content="High-end Real Estate, Stocks and the Aspirational Lifestyle. Insights from a 20-year market veteran. By Fritts Causby.">
+<link rel="canonical" href="https://thepinnacle.ink/">
+<link rel="alternate" type="application/rss+xml" title="The Pinnacle" href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14171c;
+    --ink-soft: #2a2f38;
+    --paper: #f6f1e7;
+    --paper-soft: #efe9dc;
+    --rule: #d9d1bf;
+    --gold: #a68442;
+    --gold-soft: #c8a867;
+    --sidebar-bg: #111418;
+    --sidebar-text: #d8d2c2;
+    --sidebar-muted: #8a8578;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    min-height: 100vh;
+  }
+
+  /* ============ SIDEBAR ============ */
+  #sidebar {
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 3rem 2.5rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #000;
+  }
+
+  .logo-block {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #2a2f38;
+    margin-bottom: 1.75rem;
+  }
+
+  .logo-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2.35rem;
+    letter-spacing: 0.08em;
+    color: var(--paper);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .logo-mark em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold-soft);
+  }
+
+  .logo-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    color: var(--sidebar-muted);
+    text-transform: uppercase;
+  }
+
+  nav.primary {
+    margin-bottom: 2rem;
+  }
+
+  nav.primary ul { list-style: none; }
+
+  nav.primary li {
+    border-bottom: 1px solid #1e2228;
+  }
+
+  nav.primary a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s, padding 0.2s;
+  }
+
+  nav.primary a:hover {
+    color: var(--gold-soft);
+    padding-left: 0.5rem;
+  }
+
+  nav.primary .active a {
+    color: var(--gold-soft);
+    font-style: italic;
+  }
+
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .mini-posts { list-style: none; }
+
+  .mini-posts li {
+    padding: 0.85rem 0;
+    border-top: 1px solid #1e2228;
+  }
+
+  .mini-posts li:first-child { border-top: none; padding-top: 0; }
+
+  .mini-posts a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.35;
+    display: block;
+    font-style: italic;
+  }
+
+  .mini-posts a:hover { color: var(--gold-soft); }
+
+  .mini-posts .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    color: var(--sidebar-muted);
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 0.25rem;
+    display: block;
+  }
+
+  .signup-block {
+    background: #181c22;
+    padding: 1.5rem;
+    border: 1px solid #252a33;
+  }
+
+  .signup-block p {
+    font-size: 0.88rem;
+    color: var(--sidebar-muted);
+    margin-bottom: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .signup-form input {
+    background: #0b0d10;
+    border: 1px solid #2a2f38;
+    padding: 0.7rem 0.85rem;
+    color: var(--paper);
+    font-family: inherit;
+    font-size: 0.88rem;
+  }
+
+  .signup-form button {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+    border: none;
+    padding: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+
+  .signup-form button:hover { background: var(--gold-soft); }
+
+  .socials {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #1e2228;
+    margin-top: 1.5rem;
+  }
+
+  .socials a {
+    color: var(--sidebar-muted);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  .socials a:hover { color: var(--gold-soft); }
+
+  .sidebar-foot {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1e2228;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: var(--sidebar-muted);
+    text-transform: uppercase;
+  }
+
+  /* ============ MAIN CONTENT ============ */
+  #main {
+    padding: 3.5rem 4rem 5rem;
+    max-width: 1100px;
+  }
+
+  .masthead-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 3rem;
+  }
+
+  .issue-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .issue-label span { color: var(--gold); }
+
+  .search-bar {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* Featured hero */
+  .featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+  }
+
+  .featured-image {
+    height: 420px;
+    background:
+      linear-gradient(135deg, rgba(20,23,28,0.2), rgba(20,23,28,0.55)),
+      linear-gradient(160deg, #7a6240 0%, #3c2f1e 55%, #1c1509 100%);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-image::before {
+    content: 'MONTECITO, CALIFORNIA';
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: rgba(246, 241, 231, 0.7);
+  }
+
+  .featured-image::after {
+    content: 'PHOTOGRAPH · COURTESY BHHS CALIFORNIA PROPERTIES';
+    position: absolute;
+    bottom: 1rem;
+    right: 1.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+    color: rgba(246, 241, 231, 0.55);
+  }
+
+  .featured-category {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .featured h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.4rem;
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin-bottom: 1rem;
+    max-width: 720px;
+  }
+
+  .featured h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .featured .dek {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin-bottom: 1.25rem;
+  }
+
+  .featured .byline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+
+  .featured .byline strong { color: var(--ink); font-weight: 500; }
+
+  /* Section heading */
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section-head h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .section-head .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  /* Article grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image {
+    height: 260px;
+    margin-bottom: 1.1rem;
+    position: relative;
+  }
+
+  .card-image.real-estate {
+    background: linear-gradient(140deg, #8e7553 0%, #4a3a24 100%);
+  }
+
+  .card-image.markets {
+    background: linear-gradient(140deg, #2d4055 0%, #152230 100%);
+  }
+
+  .card-image.lifestyle {
+    background: linear-gradient(140deg, #6b4e3d 0%, #2d1f17 100%);
+  }
+
+  .card-category {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+  }
+
+  .card p {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 0.9rem;
+  }
+
+  .card .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: #7a746a;
+    text-transform: uppercase;
+    margin-top: auto;
+  }
+
+  /* Minor section — single row of 3 */
+  .minor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .minor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .minor h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  .minor .card-category { font-size: 0.6rem; }
+
+  .minor p {
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .main-foot {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+
+  /* Small responsiveness for preview */
+  @media (max-width: 960px) {
+    #wrapper { grid-template-columns: 1fr; }
+    #sidebar { position: static; height: auto; }
+    #main { padding: 2rem 1.5rem; }
+    .grid, .minor-grid { grid-template-columns: 1fr; }
+    .featured h1 { font-size: 2.2rem; }
+  }
+
+  /* Archive page list */
+  .archive-section { margin-bottom: 3.5rem; }
+  .archive-month-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .archive-list { list-style: none; }
+  .archive-list li {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+  .archive-list .archive-cat {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .archive-list .archive-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .archive-list .archive-title a { color: var(--ink); text-decoration: none; }
+  .archive-list .archive-title a:hover { color: var(--gold); }
+  .archive-list .archive-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: #7a746a;
+    text-transform: uppercase;
+  }
+  .page-header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--ink);
+  }
+  .page-header .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .page-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .page-header p {
+    margin-top: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 640px;
+  }
+  .outreach-line {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0 0.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .outreach-line a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+  .outreach-line a:hover { color: var(--ink); }
+  @media (max-width: 960px) {
+    .archive-list li { grid-template-columns: 1fr; gap: 0.4rem; }
+    .page-header h1 { font-size: 2.2rem; }
+  }
+
+  .article-inline-image { margin: 2rem 0; }
+  .article-inline-image img { max-width: 100%; height: auto; display: block; width: 100%; }
+  .article-inline-image figcaption {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.62rem;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--ink-soft); padding-top: 0.6rem;
+  }
+
+  /* Rail content follows the reader down the page */
+  .rail-inner { position: sticky; top: 1.5rem; }
+</style>
+<style>
+
+  /* ============ UNIFIED RIGHT RAIL ============ */
+  #rail {
+    padding: 3.5rem 2rem 5rem 1.75rem;
+    margin-right: 1.5rem;
+    border-left: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .rail-top-stack {
+    margin-bottom: 2.5rem;
+    padding: 1.4rem 1.1rem;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+  }
+  .rail-cta-button {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    padding: 0.85rem 0.5rem;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    transition: background 0.15s, color 0.15s;
+  }
+  .rail-cta-subscribe {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-subscribe:hover { background: var(--gold-soft); }
+  .rail-cta-sponsor {
+    background: transparent;
+    color: var(--gold-soft);
+    border: 1px solid var(--gold);
+  }
+  .rail-cta-sponsor:hover {
+    background: var(--gold);
+    color: var(--sidebar-bg);
+  }
+  .rail-cta-explainer {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--sidebar-muted);
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .rail-block { margin-bottom: 2.5rem; }
+  .rail-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+    display: block;
+  }
+  .rail-winwin {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 1.1rem;
+  }
+
+  .tool-card {
+    display: block;
+    padding: 0.95rem 1rem;
+    background: var(--paper-soft);
+    border-left: 2px solid var(--gold);
+    margin-bottom: 0.65rem;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s, transform 0.15s;
+  }
+  .tool-card:hover {
+    background: #e6dfcb;
+    transform: translateX(2px);
+  }
+  .tool-card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--ink);
+    display: block;
+  }
+  .tool-card-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 0.3rem;
+    display: block;
+  }
+  .tool-card-benefit {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .rail-foot-link {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+  }
+  .rail-foot-link a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+  .rail-foot-link a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .rail-tip-jar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 1.25rem 1rem;
+  }
+  .rail-tip-jar .rail-label { color: var(--gold-soft); }
+  .rail-tip-jar p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--sidebar-text);
+    margin-bottom: 0.85rem;
+  }
+  .rail-tip-jar a.tip-button {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 0.55rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .rail-tip-jar a.tip-button:hover { background: var(--gold-soft); }
+
+#wrapper { grid-template-columns: 340px minmax(0, 1fr) 280px; }
+
+/* Featured trio: 1 large + 2 small tiles */
+.featured-trio {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+}
+.featured-trio .featured { margin-bottom: 0; }
+.small-tiles-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.4rem;
+}
+.small-tile {
+  position: relative;
+  display: block;
+  min-height: 250px;
+  padding: 1.2rem;
+  background: linear-gradient(140deg, #2d4055 0%, #152230 100%);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: var(--paper);
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+.small-tile:hover { transform: translateY(-2px); }
+.small-tile-cat {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.95rem;
+  background: var(--gold);
+  color: var(--paper);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.55rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.55rem;
+  font-weight: 500;
+}
+.small-tile-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--paper);
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 1100px) {
+  #wrapper { grid-template-columns: 340px 1fr; }
+  #rail { display: none; }
+}
+@media (max-width: 960px) {
+  #wrapper { grid-template-columns: 1fr; }
+  .featured-trio { grid-template-columns: 1fr; }
+  .small-tiles-stack { grid-template-rows: auto auto; }
+}
+</style>
+  <link rel="stylesheet" href="wide.css?v=705e7910">
+</head>
+<body>
+<header class="pin-banner">
+  <div class="pin-banner-inner">
+    <div class="pin-brand">
+      <a class="pin-logo" href="index.html">The <em>Pinnacle</em></a>
+      <div class="pin-tag"><a href="categories/real-estate.html">Real Estate</a> <span>&middot;</span> <a href="categories/markets.html">Markets</a> <span>&middot;</span> <a href="categories/lifestyle.html">Lifestyle</a></div>
+    </div>
+    <button class="pin-menu-toggle" type="button" aria-expanded="false" aria-controls="pin-nav" onclick="var n=document.getElementById('pin-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+    <nav class="pin-nav" id="pin-nav" aria-label="Main"><a href="index.html" class=active>Home</a><a href="about.html">About</a><a href="mission.html">Mission</a><a href="services.html">Services</a><a href="archive.html">Archive</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a><a class="pin-subscribe" href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe</a></nav>
+  </div>
+</header>
+
+
+<div id="wrapper">
+  <aside id="sidebar">
+
+    <div class="sidebar-section sidebar-categories">
+      <span class="sidebar-label">Categories</span>
+      <nav class="primary" aria-label="Categories">
+      <ul>
+        <li><a href="categories/real-estate.html">Real Estate</a></li>
+        <li><a href="categories/markets.html">Markets</a></li>
+        <li><a href="categories/lifestyle.html">Lifestyle</a></li>
+      </ul>
+      </nav>
+    </div>
+
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">From the Archive</span>
+      <ul class="mini-posts">
+        <li>
+          <a href="articles/trading-places-explained.html">Trading Places Explained</a>
+          <span class="meta">Markets · Nov 2026</span>
+        </li>
+        <li>
+          <a href="articles/villa-maggio-frank-sinatra-last-intact-estate.html">Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</a>
+          <span class="meta">Real Estate · May 2026</span>
+        </li>
+        <li>
+          <a href="articles/a-conversation-with-scott-brown.html">A Conversation with Scott Brown</a>
+          <span class="meta">Lifestyle · May 2026</span>
+        </li>
+        <li>
+          <a href="articles/is-using-margin-ever-a-good-idea.html">Is Using Margin Ever a Good Idea?</a>
+          <span class="meta">Markets · May 2026</span>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="socials">
+      <a href="https://instagram.com/thepinnaclebyfritts" target="_blank">IG</a>
+      <a href="#" target="_blank">YT</a>
+      <a href="#" target="_blank">FB</a>
+      <a href="#" target="_blank">X</a>
+      <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml">RSS</a>
+    </div>
+
+    <div class="sidebar-foot">
+      © 2026 The Pinnacle<br>
+      By Fritts Causby
+    </div>
+  </aside>
+  <main id="main">
+<style>
+.featured-image::before, .featured-image::after { content: none !important; }
+.featured a:hover h1 { color: var(--gold); transition: color 0.2s; }
+.card a:hover h3 { color: var(--gold); transition: color 0.2s; }
+</style>
+
+    <div class="section-head">
+      <h2>Latest</h2>
+      <span class="count">20 pieces in the archive</span>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <a href="articles/trading-places-explained.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/trading-places-tv-wall.jpg'); background-size: cover; background-position: center 35%;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Trading Places Explained</h3>
+          <p>The orange juice trade, the margin call that ruined the Dukes and the real Eddie Murphy rule.</p>
+          <span class="meta">Nov 21 · 10 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/service-never-stops-veterans-memorial-reef-charity-spotlight.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/veterans-memorial-reef.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>Service Never Stops</h3>
+          <p>Veterans continue protecting the coastline at Veterans Memorial Reef. A charity spotlight.</p>
+          <span class="meta">Nov 01 · 5 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/legacy-yields-a-tale-of-two-buffetts.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/jimmy-and-warren-buffett-tile.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>Legacy Yields: A Tale of Two Buffetts</h3>
+          <p>How Warren Buffett and Jimmy Buffett built two of the most consequential philanthropic legacies in American life, and why the Giving Pledge increasingly runs on legacy assets.</p>
+          <span class="meta">May 11 · 5 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/villa-maggio-frank-sinatra-last-intact-estate.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/villa-maggio-aerial-compound-tennis-pool.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Villa Maggio: Frank Sinatra&#x27;s Last Intact Estate</h3>
+          <p>The 7.5-acre Palm Desert compound where Sinatra entertained the Rat Pack, designed for absolute discretion at 4,300 feet.</p>
+          <span class="meta">May 05 · 5 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/a-conversation-with-scott-brown.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/beyond-mach-3-cover.jpg'); background-size: cover; background-position: center 42%;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>A Conversation with Scott Brown</h3>
+          <p>On publishing his late father&#x27;s SR-71 pilot memoir, surviving foster care, and the college roommate who became one of New York&#x27;s most notorious serial killers.</p>
+          <span class="meta">May 05 · 9 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/is-using-margin-ever-a-good-idea.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/nyse-crowd-1929.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Is Using Margin Ever a Good Idea?</h3>
+          <p>After 20 years in the markets, the one decision I keep going back to is the one I didn&#x27;t make.</p>
+          <span class="meta">May 05 · 8 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/what-the-margin-data-is-telling-us.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/nyt-crash-1929-headline.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Markets</div>
+          <h3>What the Margin Data Is Telling Us</h3>
+          <p>FINRA, IBKR, and the slow exhale after a record run.</p>
+          <span class="meta">May 05 · 7 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/why-american-buyers-are-flocking-to-the-cotswolds.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/cotswolds-village-street-golden-hour.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Why American Buyers Are Flocking to the Cotswolds</h3>
+          <p>An exchange-rate window, the Soho House effect, and a political mood shift have made Cotswolds limestone the new American hedge.</p>
+          <span class="meta">May 05 · 9 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/spaceplanes-reaching-new-heights.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0061ac62-0546-4088-b530-af44c5c8fba7/nasa.gov-lunar-flyby.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>Spaceplanes Reaching New Heights</h3>
+          <p>Two companies are building vehicles that could make space travel routine</p>
+          <span class="meta">Apr 09 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/landmark-ray-kappe-house-up-for-sale.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/81209558-3a31-4db4-afc7-01719e0b5d59/715Brooktree-RayKappe-rearexterior.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Ray Kappe House: An $11.5M Architectural Landmark</h3>
+          <p>Recently listed and successfully negotiated for sale by Ian L. Brooks, this seven-level Pacific Palisades masterpiece is one of the most significant residential properties ever listed in Southern California.</p>
+          <span class="meta">Mar 01 · 3 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/female-power-players.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/sara-blakely-2012.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Female Power Players</h3>
+          <p>Why the Women Who Built Empires Deserve More Than a Month</p>
+          <span class="meta">Feb 26 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/true-wealth-the-story-of-lady-leslie-ridley-tree.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/lady-leslie.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>True Wealth: The Story of Lady Leslie Ridley-Tree</h3>
+          <p>Philanthropists Elevate the American Ideal</p>
+          <span class="meta">Feb 26 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/lady-leslie-s-montecito-estate-now-for-sale.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/177154af-ff03-4c82-a4be-d67f25a271d5/lady-leslie-ridley-tree-montecito-estate-front.jpg.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Lady Leslie’s Montecito Estate</h3>
+          <p>Built in 1921, the Home was Revitalized by Xorin Balbes</p>
+          <span class="meta">Feb 26 · 3 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-netflix-origin-story.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/netflix-stock-chart-2002-2026.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>The Netflix Origin Story</h3>
+          <p>I doubled my money on Netflix, but I still lost $107k. Here is the math I missed</p>
+          <span class="meta">Feb 16 · 5 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/stocks-vs-real-estate.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/room-with-peeling-wallpaper.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Stocks vs. Real Estate: How to Evaluate An Asset Before You Buy</h3>
+          <p>Both markets reward patience, punish impulse, and have a long history of hiding problems in plain sight. Here is how I approach both.</p>
+          <span class="meta">Feb 12 · 6 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/beyond-the-charts-how-i-use-tipranks-and-ibkr-to-filter-market-noise.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/candlestick-chart-dark-screen.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Markets</div>
+          <h3>Beyond the Charts: How I Use TipRanks and IBKR to Filter Market Noise</h3>
+          <p>I spent years listening to every analyst with a microphone. Now, I&#x27;m finally pivoting away from that. Here is what I do instead.</p>
+          <span class="meta">Feb 05 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-story-of-xpo-logistics.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image markets" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/xpo-stock-chart-2008-2026.jpg'); background-size: cover; background-position: center top;"></div>
+          <div class="card-category">Markets</div>
+          <h3>The Story of XPO Logistics: A 10,000% Lesson in Conviction</h3>
+          <p>How I turned a $207 investment into $2,016 and walked away from $31,000</p>
+          <span class="meta">Jan 29 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/love-is-bald-charity-spotlight-supporting-cancer-warriors-in-north-carolina.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/love-is-bald.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>Love is Bald Charity Spotlight | Supporting Cancer Warriors in North Carolina</h3>
+          <p>A personal spotlight on Love is Bald, a North Carolina nonprofit supporting individuals affected by cancer, honoring Amy Cromartie.</p>
+          <span class="meta">Oct 08 · 4 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/timeless-john-lautner-designed-home-in-long-beach.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image real-estate" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/0f711816-01fd-4eac-ad28-9f758138e887/Alexander_House_pool.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Real Estate</div>
+          <h3>Timeless John Lautner-Designed Home in Long Beach</h3>
+          <p>Inside the Alexander House: A 1951 John Lautner Original in Long Beach, California</p>
+          <span class="meta">Oct 03 · 3 min read</span>
+        </a>
+      </article>
+      <article class="card">
+        <a href="articles/the-story-of-the-movie-bottle-shock.html" style="display:block;text-decoration:none;color:inherit;">
+          <div class="card-image lifestyle" style="background: linear-gradient(180deg, rgba(20,23,28,0.0) 60%, rgba(20,23,28,0.4) 100%), url('images/chateau-montelena-winery.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="card-category">Lifestyle</div>
+          <h3>The Story of the Movie “Bottle Shock”</h3>
+          <p>How Napa Valley Got its Street Cred</p>
+          <span class="meta">Mar 09 · 4 min read</span>
+        </a>
+      </article>
+    </div>
+
+    <div class="outreach-line">
+      Want help developing content like this for your business or brand? Visit <a href="https://frittscausby.com" target="_blank" rel="noopener noreferrer">frittscausby.com</a>.
+    </div>
+
+    <div class="main-foot">
+      <div>The Pinnacle · Published on GitHub Pages · Delivered via Beehiiv</div>
+      <div><a href="about.html" style="color:inherit;text-decoration:none;">Masthead</a> · <a href="about.html" style="color:inherit;text-decoration:none;">Contact</a> · <a href="https://rss.beehiiv.com/feeds/fZe9VOgUEv.xml" style="color:inherit;text-decoration:none;">RSS</a></div>
+    </div>
+  </main>
+  <aside id="rail"><div class="rail-inner">
+    <div class="rail-top-stack">
+      <a href="https://thepinnacle.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-subscribe">Subscribe</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEIpPgduIgxGMsMtXkG9DPdkE4vWauntru-rULaSGT6FVWkg/viewform" target="_blank" rel="noopener noreferrer" class="rail-cta-button rail-cta-sponsor">Sponsor</a>
+      <p class="rail-cta-explainer">High-end real estate, stock market stories, and the aspirational lifestyle. Subscribe for the newsletter, or sponsor the site to advertise or promote a listing.</p>
+    </div>
+
+    <div class="rail-block">
+      <span class="rail-label">Recommended Tools</span>
+      <p class="rail-winwin">These are tools I use. Clicking one of these links gets you a sign-up bonus, and it also benefits the site.</p>
+      <a href="https://www.interactivebrokers.com/referral/fritts293" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Interactive Brokers</span>
+        <span class="tool-card-tag">Brokerage · Institutional Execution</span>
+        <span class="tool-card-benefit">$1 of IBKR stock per $100 deposited, up to $1,000 in stock</span>
+      </a>
+      <a href="https://join.robinhood.com/frittsc-697bc7/" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Robinhood</span>
+        <span class="tool-card-tag">Active Brokerage · Gold Margin</span>
+        <span class="tool-card-benefit">Free stock at sign-up. Gold members get $1,000 in interest-free margin.</span>
+      </a>
+      <a href="https://www.wealthfront.com/c/affiliates/invited/AFFD-A0HR-9S7A-IKDZ" target="_blank" rel="noopener noreferrer" class="tool-card">
+        <span class="tool-card-name">Wealthfront</span>
+        <span class="tool-card-tag">Automated Investing · Tax-Loss Harvesting</span>
+        <span class="tool-card-benefit">$50 bonus when you fund $500.</span>
+      </a>
+      <p class="rail-foot-link"><a href="resources.html">See all resources →</a></p>
+    </div>
+
+    <div class="rail-block rail-tip-jar">
+      <span class="rail-label">Help Keep the Site Going</span>
+      <p>If The Pinnacle is useful to you, a small donation helps keep the writing free of paywalls and the site running.</p>
+      <a href="https://buymeacoffee.com/frittscaus3" target="_blank" rel="noopener noreferrer" class="tip-button">Donate to the Site</a>
+    </div>
+  </div>
+  </aside>
+</div>
+
+<script>
+/* Keep the right rail in view: if it is taller than the window, it scrolls until its bottom shows, then holds */
+(function(){var r=document.querySelector('.rail-inner');if(!r)return;function f(){r.style.top=Math.min(24,window.innerHeight-r.offsetHeight-24)+'px';}f();window.addEventListener('resize',f);window.addEventListener('load',f);})();
+</script>
+</body>
+</html>

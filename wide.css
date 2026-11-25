@@ -80,3 +80,40 @@ nav.primary a { font-size: 1.3rem; }
 .share-note { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--ink-soft, #5b5650); width: 100%; min-height: 1.2em; }
 @media (min-width: 1800px) { .share-bar.share-end { max-width: 960px; } }
 @media (min-width: 2300px) { .share-bar.share-end { max-width: 1080px; } }
+
+/* ---------- Top banner with the main menu ---------- */
+.pin-banner { background: var(--sidebar-bg, #111418); color: var(--sidebar-text, #d8d2c4); border-bottom: 1px solid #2a2f38; }
+.pin-banner-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem 2.5rem; flex-wrap: wrap;
+  padding: 1.6rem 2.5rem; }
+.pin-logo { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 2.5rem; letter-spacing: 0.06em; line-height: 1;
+  color: var(--paper, #f6f1e7); text-decoration: none; white-space: nowrap; }
+.pin-logo em { color: var(--gold-soft, #c8a867); }
+.pin-tag { margin-top: 0.55rem; font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sidebar-muted, #8b8a85); }
+.pin-tag a { color: var(--sidebar-muted, #8b8a85); text-decoration: none; }
+.pin-tag a:hover { color: var(--gold-soft, #c8a867); }
+.pin-tag span { margin: 0 0.35rem; }
+.pin-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem 1.9rem; }
+.pin-nav a { font-family: 'Cormorant Garamond', serif; font-size: 1.28rem; letter-spacing: 0.02em; color: var(--sidebar-text, #d8d2c4); text-decoration: none; }
+.pin-nav a:hover, .pin-nav a.active { color: var(--gold-soft, #c8a867); font-style: italic; }
+.pin-nav a.pin-subscribe { font-family: 'JetBrains Mono', monospace; font-style: normal; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  background: var(--gold, #a68442); color: var(--sidebar-bg, #111418); padding: 0.75rem 1.2rem; }
+.pin-nav a.pin-subscribe:hover { background: var(--gold-soft, #c8a867); color: var(--sidebar-bg, #111418); }
+.pin-menu-toggle { display: none; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  background: none; color: var(--sidebar-text, #d8d2c4); border: 1px solid #3a404b; padding: 0.55rem 0.9rem; cursor: pointer; }
+
+/* Sidebar now starts with Categories */
+#sidebar .sidebar-categories { margin-bottom: 2rem; }
+#sidebar .sidebar-categories nav.primary ul { list-style: none; margin: 0; padding: 0; }
+#sidebar { top: 0; }
+
+@media (max-width: 1250px) { .pin-nav { gap: 0.4rem 1.3rem; } .pin-nav a { font-size: 1.15rem; } }
+@media (max-width: 960px) {
+  .pin-banner-inner { padding: 1.1rem 1.25rem; }
+  .pin-logo { font-size: 2rem; }
+  .pin-menu-toggle { display: inline-block; }
+  .pin-nav { display: none; width: 100%; flex-direction: column; align-items: flex-start; gap: 0.2rem; padding-top: 0.5rem; }
+  .pin-nav.open { display: flex; }
+  .pin-nav a.pin-subscribe { margin-top: 0.6rem; }
+  /* phones: article first, then the sidebar and rail */
+  body:has(.pin-banner) #main { order: 1; } body:has(.pin-banner) #sidebar { order: 2; } body:has(.pin-banner) #rail { order: 3; }
+}
