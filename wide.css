@@ -117,3 +117,7 @@ nav.primary a { font-size: 1.3rem; }
   /* phones: article first, then the sidebar and rail */
   body:has(.pin-banner) #main { order: 1; } body:has(.pin-banner) #sidebar { order: 2; } body:has(.pin-banner) #rail { order: 3; }
 }
+
+/* With the top banner, the sidebar scrolls with the page so the archive list runs all the way down */
+body:has(.pin-banner) #sidebar { position: static; height: auto; overflow: visible; }
+body:has(.pin-banner) #sidebar .signup-block { margin-bottom: 2.25rem; }
