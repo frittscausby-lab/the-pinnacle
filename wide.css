@@ -1,0 +1,82 @@
+/* =========================================================
+   The Pinnacle: larger type, wider columns and sidebars,
+   scaled up on big monitors (same approach as frittscausby.com).
+   Loaded after each page's own styles.
+   ========================================================= */
+html, body { font-size: 18px; }
+
+/* Three-column pages: left sidebar, main, right rail */
+#wrapper { grid-template-columns: 370px minmax(0, 1fr) 340px; }
+
+/* Article and page text column */
+.article-body,
+#main .masthead-bar, #main .breadcrumb, #main .article-header, #main .article-lead-image,
+#main .article-tags, #main .article-cta, #main .related, #main .outreach-line, #main .main-foot,
+#main:has(.article-header) .masthead-bar { max-width: 860px; }
+.article-body { font-size: 1.12rem; }
+.article-dek { max-width: none; }
+
+/* Home and listing pages: let the main column use the room */
+#main { max-width: none; }
+
+/* Left sidebar: bigger text; keep the logo on one line */
+.logo-mark { white-space: nowrap; font-size: 2.15rem; letter-spacing: 0.05em; }
+nav.primary a { font-size: 1.3rem; }
+.mini-posts a { font-size: 1.12rem; }
+.mini-posts .meta, .sidebar-label { font-size: 0.72rem; }
+.logo-tag { font-size: 0.74rem; }
+.signup-block p { font-size: 0.98rem; }
+
+/* Right rail: wider and easier to read */
+#rail { padding-left: 2rem; padding-right: 2rem; margin-right: 0; }
+.rail-label { font-size: 0.74rem; }
+.rail-cta-explainer, .rail-winwin { font-size: 1.05rem; }
+.tool-card { padding: 1.05rem 1.15rem; }
+.tool-card-name { font-size: 1.25rem; }
+.tool-card-tag { font-size: 0.66rem; }
+.tool-card-benefit { font-size: 0.95rem; }
+.rail-tip-jar p { font-size: 1.1rem; }
+.rail-cta-button { font-size: 0.8rem; }
+
+/* Home: tiles only, three across when there is room */
+.grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 1500px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* Larger monitors */
+@media (min-width: 1400px) {
+  html, body { font-size: 19px; }
+}
+@media (min-width: 1800px) {
+  html, body { font-size: 20.5px; }
+  #wrapper { grid-template-columns: 400px minmax(0, 1fr) 400px; }
+  .article-body, #main .breadcrumb, #main .article-header, #main .article-lead-image, #main .article-tags, #main .article-cta, #main .related, #main .outreach-line, #main .main-foot, #main:has(.article-header) .masthead-bar { max-width: 960px; }
+}
+@media (min-width: 2300px) {
+  html, body { font-size: 22.5px; }
+  #wrapper { grid-template-columns: 460px minmax(0, 1fr) 460px; }
+  .article-body, #main .breadcrumb, #main .article-header, #main .article-lead-image, #main .article-tags, #main .article-cta, #main .related, #main .outreach-line, #main .main-foot, #main:has(.article-header) .masthead-bar { max-width: 1080px; }
+}
+
+/* Mid-size screens: drop the right rail below, keep the sidebar */
+@media (max-width: 1100px) {
+  #wrapper { grid-template-columns: 340px minmax(0, 1fr); }
+}
+@media (max-width: 960px) {
+  html, body { font-size: 17px; }
+  #wrapper { grid-template-columns: minmax(0, 1fr); }
+  .grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ---------- Share buttons ---------- */
+.share-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1.5rem 0 0; }
+.share-bar.share-end { margin: 2.5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--rule, #d9d2c3); max-width: 860px; }
+.share-label { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-soft, #5b5650); margin-right: 0.4rem; }
+.share-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: 'JetBrains Mono', monospace; font-size: 0.66rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink, #14171c); background: transparent;
+  border: 1px solid var(--rule, #d9d2c3); padding: 0.5rem 0.75rem; text-decoration: none; cursor: pointer; line-height: 1; }
+.share-btn:hover { border-color: var(--gold, #b8903f); color: var(--gold, #b8903f); }
+.share-btn svg { width: 14px; height: 14px; fill: currentColor; }
+.share-note { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--ink-soft, #5b5650); width: 100%; min-height: 1.2em; }
+@media (min-width: 1800px) { .share-bar.share-end { max-width: 960px; } }
+@media (min-width: 2300px) { .share-bar.share-end { max-width: 1080px; } }
