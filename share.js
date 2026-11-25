@@ -1,9 +1,10 @@
 /* Share buttons: copy link, and Instagram (which has no web share link).
-   On phones, Instagram opens the device share sheet; elsewhere it copies the link. */
+   On phones and tablets, Instagram opens the device share sheet, where Instagram is listed.
+   On a computer, Instagram can't receive a shared link, so the button copies the link and says so. */
 (function () {
   function note(bar, text) {
     var n = bar.querySelector('.share-note');
-    if (n) { n.textContent = text; setTimeout(function () { n.textContent = ''; }, 6000); }
+    if (n) { n.textContent = text; clearTimeout(n._t); n._t = setTimeout(function () { n.textContent = ''; }, 9000); }
   }
   function copy(url) {
     if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(url);
@@ -11,6 +12,7 @@
     try { document.execCommand('copy'); } catch (e) {}
     document.body.removeChild(t); return Promise.resolve();
   }
+  var touch = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform));
   document.addEventListener('click', function (e) {
     var b = e.target.closest('[data-share]');
     if (!b) return;
@@ -18,11 +20,12 @@
     if (b.getAttribute('data-share') === 'copy') {
       copy(url).then(function () { note(bar, 'Link copied.'); });
     } else if (b.getAttribute('data-share') === 'instagram') {
-      if (navigator.share && /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      if (touch && navigator.share) {
         navigator.share({ title: title, url: url }).catch(function () {});
       } else {
-        copy(url).then(function () { note(bar, 'Link copied. Paste it into an Instagram story, post or bio.'); });
-        window.open('https://www.instagram.com/', '_blank', 'noopener');
+        copy(url).then(function () {
+          note(bar, 'Link copied. Instagram only shares links from the phone app: paste it into a story with the link sticker, or into your bio.');
+        });
       }
     }
   });
